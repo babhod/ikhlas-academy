@@ -152,7 +152,9 @@ export function AboutPage() {
             ابدأ رحلتك التعليمية معنا اليوم
           </p>
           <a
-            href="/#register"
+            href="https://wa.me/+905464077736"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-white text-primary px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-bold text-lg"
           >
             سجّل الآن

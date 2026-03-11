@@ -33,7 +33,7 @@ ${formData.message}
 
     // Redirect to WhatsApp after 2 seconds
     setTimeout(() => {
-      const whatsappNumber = "+963123456789";
+      const whatsappNumber = "+905464077736";
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
       window.open(whatsappUrl, "_blank");
       setSubmitted(false);
@@ -76,7 +76,7 @@ ${formData.message}
               {/* Contact Cards */}
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/+963123456789"
+                  href="https://wa.me/+905464077736"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-4 p-6 bg-green-50 border border-green-200 rounded-xl hover:shadow-md transition-shadow"
@@ -86,7 +86,7 @@ ${formData.message}
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">واتساب</h3>
-                    <p className="text-muted-foreground">+963 123 456 789</p>
+                    <p className="text-muted-foreground">+905 464 077 736</p>
                     <p className="text-sm text-green-600 mt-1">متاح 24/7</p>
                   </div>
                 </a>
@@ -97,7 +97,7 @@ ${formData.message}
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">الهاتف</h3>
-                    <p className="text-muted-foreground" dir="ltr">+963 123 456 789</p>
+                    <p className="text-muted-foreground" dir="ltr">+905 464 077 736</p>
                     <p className="text-sm text-muted-foreground mt-1">السبت - الخميس: 9 صباحاً - 9 مساءً</p>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ ${formData.message}
                         onChange={handleChange}
                         required
                         className="w-full px-4 py-3 bg-input-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-                        placeholder="+963 xxx xxx xxx"
+                        placeholder="+905 xxx xxx xxx"
                       />
                     </div>
 

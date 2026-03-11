@@ -7,7 +7,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -82,8 +82,10 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="#register"
+              <a
+              href="https://wa.me/+905464077736"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-6 py-2 rounded-lg transition-all duration-300 ${
                 isScrolled
                   ? "bg-primary text-white hover:bg-primary/90"
@@ -133,7 +135,9 @@ export function Header() {
                 </Link>
               ))}
               <a
-                href="#register"
+                href="https://wa.me/+905464077736"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className={`px-6 py-2 rounded-lg transition-all text-center ${
                   isScrolled

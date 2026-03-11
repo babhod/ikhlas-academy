@@ -45,13 +45,13 @@ export function Footer() {
             <h3 className="font-bold text-foreground mb-4">تواصل معنا</h3>
             <div className="flex flex-col gap-3">
               <a
-                href="https://wa.me/+963123456789"
+                href="https://wa.me/+905464077736"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone size={18} />
-                <span>+963 123 456 789</span>
+                <span>+905 464 077 736</span>
               </a>
               <a
                 href="mailto:info@ikhlas-academy.com"

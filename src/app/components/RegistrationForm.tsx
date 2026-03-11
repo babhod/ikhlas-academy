@@ -34,7 +34,7 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
 
     // Redirect to WhatsApp after 2 seconds
     setTimeout(() => {
-      const whatsappNumber = "+963123456789";
+      const whatsappNumber = "+905464077736";
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, "_blank");
     }, 2000);
@@ -140,7 +140,7 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
             onChange={handleChange}
             required
             className="w-full px-4 py-3 bg-input-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-            placeholder="+963 xxx xxx xxx"
+            placeholder="+905 xxx xxx xxx"
           />
         </div>
 

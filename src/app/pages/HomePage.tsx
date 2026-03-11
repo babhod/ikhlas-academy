@@ -1,5 +1,5 @@
 import { RegistrationForm } from "../components/RegistrationForm";
-import { BookOpen, Users, GraduationCap, Award, CheckCircle2, Star, User, UserCheck, Clock, Globe, BookMarked, Shield, Target, Heart } from "lucide-react";
+import { BookOpen, Users, GraduationCap, Award, CheckCircle2, Star, User, UserCheck, Clock, Globe, BookMarked, Shield, Target, Heart, BookText, Languages, Mic } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import certificateImage from "../../assets/sert.png";
 import heroAnimation from "../../assets/animation.json";
@@ -33,7 +33,9 @@ export function HomePage() {
               <p className="text-lg lg:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
 تعليمٌ راسخ للقراءة العربية السليمة، وتحفيظ القرآن الكريم، وضبط التلاوة، في بيئة تعليمية أونلاين تجمع بين الوضوح، والإتقان، ومراعاة الفروق الفردية، للأطفال واليافعين والبالغين.              </p>
               <a
-                href="#register"
+                href="https://wa.me/+905464077736"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-primary text-white px-10 py-4 rounded-xl hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl text-lg font-bold"
               >
                 ابدأ الآن
@@ -138,22 +140,22 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: <BookOpen className="text-primary" size={40} />,
+                icon: <BookMarked className="text-primary" size={40} />,
                 title: "برنامج الحفظ",
                 description: "حفظ القرآن الكريم بإتقان وثبات",
               },
               {
-                icon: <CheckCircle2 className="text-primary" size={40} />,
+                icon: <BookText className="text-primary" size={40} />,
                 title: "جزء رشيدي",
                 description: "تأسيس القراءة العربية من الصفر",
               },
               {
-                icon: <Star className="text-primary" size={40} />,
+                icon: <Award className="text-primary" size={40} />,
                 title: "برنامج لغة عربية – المستوى الأول",
                 description: "تقوية مهارات القراءة والفهم",
               },
               {
-                icon: <Award className="text-primary" size={40} />,
+                icon: <Mic className="text-primary" size={40} />,
                 title: "برنامج التلاوة",
                 description: "إتقان تلاوة القرآن الكريم",
               },
@@ -166,7 +168,9 @@ export function HomePage() {
                 <h3 className="text-xl font-bold text-foreground mb-3">{program.title}</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">{program.description}</p>
                 <a
-                  href="#register"
+                  href="https://wa.me/+905464077736"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-primary font-semibold hover:underline inline-flex items-center gap-2"
                 >
                   سجّل الآن ←
@@ -255,7 +259,9 @@ export function HomePage() {
                 </li>
               </ul>
               <a
-                href="#register"
+                href="https://wa.me/+905464077736"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors font-semibold"
               >
                 سجّل الآن
@@ -282,7 +288,9 @@ export function HomePage() {
                 </li>
               </ul>
               <a
-                href="#register"
+                href="https://wa.me/+905464077736"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold"
               >
                 سجّل الآن
@@ -447,7 +455,9 @@ export function HomePage() {
               </div>
 
               <a
-                href="#register"
+                href="https://wa.me/+905464077736"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full bg-white text-primary px-10 py-5 rounded-xl font-bold text-xl text-center shadow-[0_0_25px_rgba(255,255,255,0.35)] hover:shadow-[0_0_35px_rgba(255,255,255,0.5)] hover:bg-[color-mix(in_srgb,#2750A9_6%,white)] hover:scale-105 transform transition-all duration-300"
               >
                 سجّل الآن مجاناً
