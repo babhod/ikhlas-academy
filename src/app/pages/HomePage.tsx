@@ -2,6 +2,7 @@ import { RegistrationForm } from "../components/RegistrationForm";
 import { BookOpen, Users, GraduationCap, Award, CheckCircle2, Star, User, UserCheck, Clock, Globe, BookMarked, Shield, Target, Heart } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import certificateImage from "../../assets/sert.png";
+import heroAnimation from "../../assets/animation.json";
 import { useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 
@@ -56,7 +57,7 @@ export function HomePage() {
                   <Player
                     autoplay
                     loop
-                    src="https://lottie.host/67afd54e-b37e-4a6b-9729-c67393117ec5/0Q6OHh7XE7.lottie"
+                    src={heroAnimation}
                     style={{ height: "100%", width: "100%" }}
                     className="drop-shadow-2xl"
                   />
