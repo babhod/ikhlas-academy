@@ -11,7 +11,6 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
     age: "",
     country: "",
     whatsapp: "",
-    level: "",
     goal: "",
   });
 
@@ -28,7 +27,6 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
 مرحباً، أنا ${formData.fullName}
 العمر: ${formData.age}
 البلد: ${formData.country}
-المستوى في القراءة: ${formData.level}
 الهدف من الدراسة: ${formData.goal}
 
 أرغب في التسجيل في الأكاديمية
@@ -144,25 +142,6 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
             className="w-full px-4 py-3 bg-input-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
             placeholder="+963 xxx xxx xxx"
           />
-        </div>
-
-        <div>
-          <label htmlFor="level" className="block text-sm font-medium mb-2">
-            المستوى في القراءة <span className="text-red-500">*</span>
-          </label>
-          <select
-            id="level"
-            name="level"
-            value={formData.level}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-3 bg-input-background border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary"
-          >
-            <option value="">اختر المستوى</option>
-            <option value="مبتدئ">مبتدئ</option>
-            <option value="متوسط">متوسط</option>
-            <option value="جيد">جيد</option>
-          </select>
         </div>
 
         <div>

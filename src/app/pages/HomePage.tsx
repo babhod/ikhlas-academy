@@ -100,16 +100,6 @@ export function HomePage() {
                     title: "دروس أونلاين مرنة تناسب مختلف المناطق الزمنية",
                     description: "تعلم من أي مكان في العالم وفي الوقت الذي يناسبك"
                   },
-                  {
-                    icon: <Target className="text-primary" size={32} />,
-                    title: "برامج تعليمية واضحة ومنهجية",
-                    description: "منهج متكامل ومنظم يضمن وصولك لأهدافك التعليمية"
-                  },
-                  {
-                    icon: <Award className="text-primary" size={32} />,
-                    title: "شهادة بعد إتمام البرنامج",
-                    description: "شهادة معتمدة من الأكاديمية تؤكد إنجازك ومستواك"
-                  },
                 ].map((benefit, index) => (
                   <div 
                     key={index} 
@@ -206,7 +196,7 @@ export function HomePage() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
               {[
                 {
                   number: "1",
@@ -216,22 +206,12 @@ export function HomePage() {
                 {
                   number: "2",
                   title: "التواصل عبر واتساب",
-                  description: "تواصل مباشر مع إدارة الأكاديمية",
+                  description: "تواصل مباشر لتحديد المستوى",
                 },
                 {
                   number: "3",
-                  title: "تحديد المستوى",
-                  description: "نحدد مستواك المناسب",
-                },
-                {
-                  number: "4",
                   title: "الانضمام للدروس",
-                  description: "ابدأ رحلة التعلم",
-                },
-                {
-                  number: "5",
-                  title: "الحصول على شهادة",
-                  description: "شهادة إتمام معتمدة",
+                  description: "ثم الحصول على شهادة إتمام معتمدة",
                 },
               ].map((step, index) => (
                 <div key={index} className="text-center relative">
