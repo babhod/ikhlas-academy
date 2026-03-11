@@ -139,23 +139,23 @@ export function HomePage() {
             {[
               {
                 icon: <BookOpen className="text-primary" size={40} />,
-                title: "تعليم مبادئ القراءة العربية",
-                description: "تعلم أساسيات القراءة الصحيحة للحروف والكلمات من الصفر",
+                title: "برنامج الحفظ",
+                description: "حفظ القرآن الكريم بإتقان وثبات",
               },
               {
                 icon: <CheckCircle2 className="text-primary" size={40} />,
-                title: "تصحيح التلاوة",
-                description: "تصحيح الأخطاء الشائعة في قراءة القرآن الكريم",
+                title: "جزء رشيدي",
+                description: "تأسيس القراءة العربية من الصفر",
               },
               {
                 icon: <Star className="text-primary" size={40} />,
-                title: "أحكام التجويد",
-                description: "فهم وتطبيق قواعد التجويد بطريقة مبسطة وعملية",
+                title: "برنامج لغة عربية – المستوى الأول",
+                description: "تقوية مهارات القراءة والفهم",
               },
               {
                 icon: <Award className="text-primary" size={40} />,
-                title: "تحفيظ القرآن الكريم",
-                description: "خطة تدريجية محكمة للحفظ والمراجعة المستمرة",
+                title: "برنامج التلاوة",
+                description: "إتقان تلاوة القرآن الكريم",
               },
             ].map((program, index) => (
               <div
