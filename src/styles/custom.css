@@ -92,3 +92,61 @@ input[type="tel"] {
 .section-divider.dark-to-light .shape-fill {
   fill: #f7f9fc;
 }
+
+/* Final CTA Section - Layered Depth Design */
+.section-cta {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(72px, 10vw, 120px);
+  /* Base primary color */
+  background-color: #2750A9;
+}
+
+/* Layer 1: Subtle Islamic geometric pattern (very low opacity) */
+.section-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 L61 39 L95 50 L61 61 L50 95 L39 61 L5 50 L39 39 Z' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.04'/%3E%3Cpath d='M50 15 L56 38 L80 50 L56 62 L50 85 L44 62 L20 50 L44 38 Z' fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.03'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  pointer-events: none;
+}
+
+/* Layer 2: Soft gradient overlay */
+.section-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(39, 80, 169, 1) 0%,
+    rgba(30, 60, 140, 1) 50%,
+    rgba(25, 50, 120, 1) 100%
+  );
+  pointer-events: none;
+}
+
+/* Layer 3: Radial light effect behind main content */
+.section-cta .cta-radial-light {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.03) 30%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content stays above background layers */
+.section-cta .container {
+  position: relative;
+  z-index: 10;
+}

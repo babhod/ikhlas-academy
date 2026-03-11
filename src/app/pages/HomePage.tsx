@@ -420,15 +420,18 @@ export function HomePage() {
       </section>
 
       {/* Final CTA Section - Majestic Design */}
-      <section className="relative overflow-hidden" style={{ backgroundColor: "#2750A9", paddingBlock: "clamp(72px, 10vw, 120px)" }}>
-        <div className="container mx-auto px-4 relative z-10">
+      <section className="section-cta">
+        {/* Radial light effect behind content */}
+        <div className="cta-radial-light"></div>
+        
+        <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
+            {/*<h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               ابدأ رحلتك الآن
-            </h2>
-            <p className="text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
+            </h2>*/}
+            {/*<p className="text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
               انضم الآن إلى مئات الطلاب الذين يتعلمون القراءة الصحيحة وتلاوة القرآن بإتقان في أكاديمية إخلاص
-            </p>
+            </p>*/}
           </div>
 
           <div className="max-w-3xl mx-auto">
