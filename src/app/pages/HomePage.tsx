@@ -5,6 +5,13 @@ import certificateImage from "../../assets/sert.png";
 import heroAnimation from "../../assets/animation.json";
 import { useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../components/ui/carousel";
 
 export function HomePage() {
   useEffect(() => {
@@ -88,8 +95,8 @@ export function HomePage() {
                     description: "تعلم من أي مكان في العالم وفي الوقت الذي يناسبك"
                   },
                 ].map((benefit, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="flex gap-4 items-start bg-white/10 p-6 rounded-xl border border-white/10 hover:bg-white/20 hover:shadow-md transition-all"
                   >
                     <div className="flex-shrink-0 bg-primary/10 p-3 rounded-lg">
@@ -169,7 +176,6 @@ export function HomePage() {
           </div>
         </div>
       </section>
-
       {/* How Learning Works Section */}
       <section className="section-dark">
         <div className="container mx-auto px-4">
@@ -298,45 +304,86 @@ export function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[
-              {
-                name: "محمد العلي",
-                country: "سوريا",
-                text: "تحسن واضح في القراءة خلال أسابيع قليلة. المعلمون متمكنون وطريقة التدريس مبسطة جداً.",
-              },
-              {
-                name: "فاطمة حسن",
-                country: "الأردن",
-                text: "تعلمت أحكام التجويد بطريقة مبسطة وواضحة. الآن أستطيع تلاوة القرآن بشكل صحيح والحمد لله.",
-              },
-              {
-                name: "أحمد خالد",
-                country: "لبنان",
-                text: "أكاديمية محترمة وأسلوب تعليم مميز. أنصح بها كل من يريد تعلم القراءة الصحيحة للقرآن الكريم.",
-              },
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-                <div className="flex gap-1 mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="text-yellow-400 fill-yellow-400" size={20} />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 leading-relaxed italic">
-                  "{testimonial.text}"
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                    <UserCheck className="text-primary" size={20} />
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            className="w-full max-w-7xl mx-auto"
+            dir="ltr"
+          >
+            <CarouselContent>
+              {[
+                {
+                  name: "محمد العلي",
+                  country: "سوريا",
+                  text: "تحسن واضح في القراءة خلال أسابيع قليلة. المعلمون متمكنون وطريقة التدريس مبسطة جداً.",
+                },
+                {
+                  name: "فاطمة حسن",
+                  country: "الأردن",
+                  text: "تعلمت أحكام التجويد بطريقة مبسطة وواضحة. الآن أستطيع تلاوة القرآن بشكل صحيح والحمد لله.",
+                },
+                {
+                  name: "أحمد خالد",
+                  country: "لبنان",
+                  text: "أكاديمية محترمة وأسلوب تعليم مميز. أنصح بها كل من يريد تعلم القراءة الصحيحة للقرآن الكريم.",
+                },
+                {
+                  name: "سارة محمد",
+                  country: "مصر",
+                  text: "بدأت من الصفر وأنا الآن أقرأ القرآن الكريم بطلاقه. شكراً لكل القائمين على الأكاديمية.",
+                },
+                {
+                  name: "عمر الشعار",
+                  country: "العراق",
+                  text: "تجربة مميزة جداً. المعلمون صبورون ويشرحون بطريقة تناسب كل طالب. أنصح الجميع بالانضمام.",
+                },
+                {
+                  name: "نورة عبدالله",
+                  country: "السعودية",
+                  text: "أول مرة أتعلم فيها القراءة بشكل صحيح. الآن أقرأ وأفهم القرآن وأنقل ذلك لأطفالي.",
+                },
+                {
+                  name: "خالد إبراهيم",
+                  country: "الكويت",
+                  text: "ممتاز من جميع النواحي. الجدول مرن والأسعار مناسبة. أنصح بها لكل من يريد تعلم القرآن.",
+                },
+                {
+                  name: "ليلى أحمد",
+                  country: "تونس",
+                  text: "شكراً خاص للمعلمة فهي تشرح بوضوح وصبر. تحسن مستواي بشكل ملحوظ في وقت قصير.",
+                },
+              ].map((testimonial, index) => (
+                <CarouselItem
+                  key={index}
+                  className="basis-full md:basis-1/2 lg:basis-1/3"
+                >
+                  <div
+                    dir="rtl"
+                    className="bg-white/10 backdrop-blur-sm p-5 rounded-2xl border border-white/20 hover:bg-white/15 transition-all h-full min-h-[200px]"
+                  >
+                    <div className="flex gap-1 mb-3">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <Star key={star} className="text-yellow-400 fill-yellow-400" size={16} />
+                      ))}
+                    </div>
+                    <p className="text-white/80 mb-4 leading-relaxed italic text-sm line-clamp-4">
+                      "{testimonial.text}"
+                    </p>
+                    <div className="flex items-center gap-3 pt-2 border-t border-white/10">
+                      <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                        <UserCheck className="text-white" size={18} />
+                      </div>
+                      <div>
+                        <div className="font-bold text-white text-sm">{testimonial.name}</div>
+                        <div className="text-white/60 text-xs">{testimonial.country}</div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-bold text-foreground">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.country}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-2 bg-white/20 hover:bg-white/30 border-none text-white h-10 w-10" />
+            <CarouselNext className="hidden md:flex -right-2 bg-white/20 hover:bg-white/30 border-none text-white h-10 w-10" />
+          </Carousel>
         </div>
       </section>
 
