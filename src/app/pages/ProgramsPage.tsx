@@ -64,10 +64,10 @@ export function ProgramsPage() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">البرامج التعليمية</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
             برامج متنوعة ومتخصصة لتعليم القراءة العربية والقرآن الكريم
           </p>
         </div>

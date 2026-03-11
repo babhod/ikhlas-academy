@@ -51,10 +51,10 @@ ${formData.message}
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">تواصل معنا</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
             نحن هنا للإجابة على جميع استفساراتك ومساعدتك في بدء رحلتك التعليمية
           </p>
         </div>
@@ -91,7 +91,7 @@ ${formData.message}
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-6 bg-blue-50 border border-blue-200 rounded-xl">
+                <div className="flex items-start gap-4 p-6 bg-[color-mix(in_srgb,#2750A9_6%,white)] border border-[color-mix(in_srgb,#2750A9_25%,white)] rounded-xl">
                   <div className="bg-primary p-3 rounded-lg">
                     <Phone className="text-white" size={24} />
                   </div>
@@ -125,12 +125,12 @@ ${formData.message}
               </div>
 
               {/* Working Hours */}
-              <div className="bg-gradient-to-br from-primary to-blue-700 text-white p-6 rounded-xl">
+              <div className="bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white p-6 rounded-xl">
                 <div className="flex items-center gap-3 mb-4">
                   <Clock size={32} />
                   <h3 className="text-xl font-bold">ساعات العمل</h3>
                 </div>
-                <div className="space-y-2 text-blue-100">
+                <div className="space-y-2 text-[color-mix(in_srgb,#2750A9_20%,white)]">
                   <div className="flex justify-between">
                     <span>السبت - الخميس:</span>
                     <span className="font-semibold text-white">9:00 ص - 9:00 م</span>

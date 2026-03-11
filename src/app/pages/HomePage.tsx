@@ -12,22 +12,9 @@ export function HomePage() {
   }, []);
 
   return (
-    <div>
+    <div dir="rtl">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-purple-50 py-20 lg:py-32 overflow-hidden">
-        {/* Subtle Islamic Pattern Background */}
-        <div className="absolute inset-0 opacity-5">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="islamic-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <circle cx="50" cy="50" r="30" fill="none" stroke="#2750A9" strokeWidth="1"/>
-                <circle cx="50" cy="50" r="20" fill="none" stroke="#2750A9" strokeWidth="1"/>
-                <circle cx="50" cy="50" r="10" fill="none" stroke="#2750A9" strokeWidth="1"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#islamic-pattern)"/>
-          </svg>
-        </div>
+      <section className="section-light relative overflow-hidden">
 
         <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto">
@@ -69,12 +56,12 @@ export function HomePage() {
       </section>
 
       {/* Why Us Section with Registration Form */}
-      <section className="py-20 lg:py-28 bg-white" id="register">
+      <section className="section-dark" id="register">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start max-w-7xl mx-auto">
             {/* Right side - Benefits */}
             <div className="px-4 lg:px-0">
-              <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-10">
+              <h2 className="text-4xl lg:text-5xl font-bold text-white mb-10">
                 لماذا نحن
               </h2>
               
@@ -103,16 +90,16 @@ export function HomePage() {
                 ].map((benefit, index) => (
                   <div 
                     key={index} 
-                    className="flex gap-4 items-start bg-gradient-to-l from-blue-50/50 to-transparent p-6 rounded-xl hover:shadow-md transition-all"
+                    className="flex gap-4 items-start bg-white/10 p-6 rounded-xl border border-white/10 hover:bg-white/20 hover:shadow-md transition-all"
                   >
                     <div className="flex-shrink-0 bg-primary/10 p-3 rounded-lg">
                       {benefit.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-foreground mb-2">
+                      <h3 className="text-xl font-bold text-white mb-2">
                         {benefit.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-[color-mix(in_srgb,#2750A9_20%,white)] leading-relaxed">
                         {benefit.description}
                       </p>
                     </div>
@@ -130,7 +117,7 @@ export function HomePage() {
       </section>
 
       {/* What We Teach Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="section-light">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
@@ -184,13 +171,13 @@ export function HomePage() {
       </section>
 
       {/* How Learning Works Section */}
-      <section className="py-20 bg-white">
+      <section className="section-dark">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               كيف تبدأ رحلتك معنا؟
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
               خطوات بسيطة لبدء التعلم
             </p>
           </div>
@@ -216,12 +203,12 @@ export function HomePage() {
               ].map((step, index) => (
                 <div key={index} className="text-center relative">
                   <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg">
+                    <div className="w-16 h-16 bg-white/30 text-white rounded-full flex items-center justify-center text-2xl font-bold shadow-lg ring-1 ring-white/35">
                       {step.number}
                     </div>
                   </div>
-                  <h3 className="font-bold text-foreground mb-2">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.description}</p>
+                  <h3 className="font-bold text-white mb-2">{step.title}</h3>
+                  <p className="text-sm text-[color-mix(in_srgb,#2750A9_20%,white)]">{step.description}</p>
                 </div>
               ))}
             </div>
@@ -242,7 +229,7 @@ export function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border-2 border-primary/20 hover:shadow-xl transition-all">
+            <div className="bg-gradient-to-br from-[color-mix(in_srgb,#2750A9_6%,white)] to-white p-8 rounded-2xl border-2 border-primary/20 hover:shadow-xl transition-all">
               <div className="flex items-center gap-3 mb-4">
                 <User className="text-primary" size={32} />
                 <h3 className="text-2xl font-bold text-foreground">الدروس الفردية</h3>
@@ -300,13 +287,13 @@ export function HomePage() {
       </section>
 
       {/* Student Results Section */}
-      <section className="py-20 bg-white">
+      <section className="section-dark">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
               نتائج طلاب الأكاديمية
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
               قصص نجاح ملهمة من طلابنا
             </p>
           </div>
@@ -378,35 +365,13 @@ export function HomePage() {
       </section>
 
       {/* Final CTA Section - Majestic Design */}
-      <section className="relative py-24 overflow-hidden">
-        {/* Background with gradient and patterns */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1a3d7a] via-[#2750A9] to-[#3d5ba8]"></div>
-        
-        {/* Islamic Geometric Patterns Overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="islamic-pattern-cta" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-                <path d="M60 0L120 60L60 120L0 60Z" fill="none" stroke="white" strokeWidth="2"/>
-                <circle cx="60" cy="60" r="40" fill="none" stroke="white" strokeWidth="2"/>
-                <circle cx="60" cy="60" r="25" fill="none" stroke="white" strokeWidth="1.5"/>
-                <path d="M40 60 L80 60 M60 40 L60 80" stroke="white" strokeWidth="1.5"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#islamic-pattern-cta)"/>
-          </svg>
-        </div>
-
-        {/* Glowing orbs */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
-
+      <section className="relative overflow-hidden" style={{ backgroundColor: "#2750A9", paddingBlock: "clamp(72px, 10vw, 120px)" }}>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
               ابدأ رحلتك الآن
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/85 max-w-3xl mx-auto leading-relaxed">
               انضم الآن إلى مئات الطلاب الذين يتعلمون القراءة الصحيحة وتلاوة القرآن بإتقان في أكاديمية إخلاص
             </p>
           </div>
@@ -436,7 +401,7 @@ export function HomePage() {
 
               <a
                 href="#register"
-                className="block w-full bg-white text-primary px-10 py-5 rounded-xl hover:bg-blue-50 transition-all font-bold text-xl text-center shadow-xl hover:shadow-2xl hover:scale-105 transform duration-300"
+                className="block w-full bg-white text-primary px-10 py-5 rounded-xl font-bold text-xl text-center shadow-[0_0_25px_rgba(255,255,255,0.35)] hover:shadow-[0_0_35px_rgba(255,255,255,0.5)] hover:bg-[color-mix(in_srgb,#2750A9_6%,white)] hover:scale-105 transform transition-all duration-300"
               >
                 سجّل الآن مجاناً
               </a>

@@ -10,10 +10,10 @@ export function AboutPage() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary to-blue-700 text-white py-16">
+      <section className="bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">عن أكاديمية إخلاص</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
             رسالتنا هي نشر العلم وتعليم القرآن الكريم بأسلوب مبسط وفعّال
           </p>
         </div>
@@ -85,7 +85,7 @@ export function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               {/* Mission */}
-              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-primary/20">
+              <div className="bg-gradient-to-br from-[color-mix(in_srgb,#2750A9_6%,white)] to-white p-8 rounded-2xl border border-primary/20">
                 <h3 className="text-2xl font-bold text-foreground mb-4">رسالتنا</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   نسعى لتمكين المسلمين من إتقان القراءة العربية وتلاوة القرآن الكريم بشكل صحيح، من خلال
@@ -145,10 +145,10 @@ export function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-br from-primary to-blue-700 text-white">
+      <section className="py-16 bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">انضم إلى عائلة أكاديمية إخلاص</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[color-mix(in_srgb,#2750A9_20%,white)] mb-8 max-w-2xl mx-auto">
             ابدأ رحلتك التعليمية معنا اليوم
           </p>
           <a

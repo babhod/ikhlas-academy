@@ -55,7 +55,7 @@ export function Header() {
               </div>
               <div
                 className={`text-xs transition-colors duration-300 ${
-                  isScrolled ? "text-muted-foreground" : "text-blue-100"
+                  isScrolled ? "text-muted-foreground" : "text-[color-mix(in_srgb,#2750A9_20%,white)]"
                 }`}
               >
                 لتعليم القرآن الكريم
@@ -87,7 +87,7 @@ export function Header() {
               className={`px-6 py-2 rounded-lg transition-all duration-300 ${
                 isScrolled
                   ? "bg-primary text-white hover:bg-primary/90"
-                  : "bg-white text-primary hover:bg-blue-50"
+                  : "bg-white text-primary hover:bg-[color-mix(in_srgb,#2750A9_6%,white)]"
               }`}
             >
               سجّل الآن
@@ -138,7 +138,7 @@ export function Header() {
                 className={`px-6 py-2 rounded-lg transition-all text-center ${
                   isScrolled
                     ? "bg-primary text-white hover:bg-primary/90"
-                    : "bg-white text-primary hover:bg-blue-50"
+                    : "bg-white text-primary hover:bg-[color-mix(in_srgb,#2750A9_6%,white)]"
                 }`}
               >
                 سجّل الآن

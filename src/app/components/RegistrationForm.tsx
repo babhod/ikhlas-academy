@@ -65,14 +65,14 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
     );
   }
 
-  return (
-    <div className="bg-white p-8 rounded-2xl shadow-xl">
-      <h2 className="text-2xl font-bold text-primary mb-2">سجّل الآن للانضمام إلى الدروس</h2>
-      <p className="text-sm text-muted-foreground mb-6">املأ النموذج وسنتواصل معك فوراً</p>
+    return (
+      <div className="bg-white text-foreground p-8 rounded-2xl shadow-xl">
+        <h2 className="text-2xl font-bold text-primary mb-2">سجّل الآن للانضمام إلى الدروس</h2>
+        <p className="text-sm text-muted-foreground mb-6">املأ النموذج وسنتواصل معك فوراً</p>
 
       <form onSubmit={handleSubmit} className="space-y-5">
         <div>
-          <label htmlFor="fullName" className="block text-sm font-medium mb-2">
+          <label htmlFor="fullName" className="block text-sm font-medium mb-2 text-foreground">
             الاسم الكامل <span className="text-red-500">*</span>
           </label>
           <input
@@ -89,7 +89,7 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="age" className="block text-sm font-medium mb-2">
+            <label htmlFor="age" className="block text-sm font-medium mb-2 text-foreground">
               العمر <span className="text-red-500">*</span>
             </label>
             <input
@@ -107,7 +107,7 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
           </div>
 
           <div>
-            <label htmlFor="country" className="block text-sm font-medium mb-2">
+            <label htmlFor="country" className="block text-sm font-medium mb-2 text-foreground">
               البلد <span className="text-red-500">*</span>
             </label>
             <select
@@ -129,7 +129,7 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
         </div>
 
         <div>
-          <label htmlFor="whatsapp" className="block text-sm font-medium mb-2">
+          <label htmlFor="whatsapp" className="block text-sm font-medium mb-2 text-foreground">
             رقم واتساب <span className="text-red-500">*</span>
           </label>
           <input
@@ -145,7 +145,7 @@ export function RegistrationForm({ variant = "default" }: RegistrationFormProps)
         </div>
 
         <div>
-          <label htmlFor="goal" className="block text-sm font-medium mb-2">
+          <label htmlFor="goal" className="block text-sm font-medium mb-2 text-foreground">
             الهدف من الدراسة <span className="text-red-500">*</span>
           </label>
           <textarea
