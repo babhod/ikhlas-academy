@@ -68,22 +68,22 @@ export function HomePage() {
               <div className="space-y-6">
                 {[
                   {
-                    icon: <Users className="text-primary" size={32} />,
+                    icon: <Users className="text-white" size={32} />,
                     title: "تعليم مناسب لجميع الأعمار",
                     description: "برامج مصممة بعناية لتناسب الأطفال والبالغين والمبتدئين والمتقدمين"
                   },
                   {
-                    icon: <Heart className="text-primary" size={32} />,
+                    icon: <Heart className="text-white" size={32} />,
                     title: "متابعة فردية مع المعلم",
                     description: "اهتمام شخصي من معلمين مؤهلين لضمان تقدمك المستمر"
                   },
                   {
-                    icon: <CheckCircle2 className="text-primary" size={32} />,
+                    icon: <CheckCircle2 className="text-white" size={32} />,
                     title: "تصحيح التلاوة خطوة بخطوة",
                     description: "تصحيح دقيق لمخارج الحروف وأحكام التجويد بطريقة علمية"
                   },
                   {
-                    icon: <Globe className="text-primary" size={32} />,
+                    icon: <Globe className="text-white" size={32} />,
                     title: "دروس أونلاين مرنة تناسب مختلف المناطق الزمنية",
                     description: "تعلم من أي مكان في العالم وفي الوقت الذي يناسبك"
                   },
