@@ -14,9 +14,9 @@ interface Program {
 // Images from Unsplash (reliable sources)
 const programImages = {
   quran: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
-  arabic: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800&q=80",
-  tilawa: "https://images.unsplash.com/photo-1593079831268-3381b0db6a8f?w=800&q=80",
-  hifz: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+  arabic: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
+  tilawa: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
+  hifz: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
 };
 
 // Program image component with fallback
