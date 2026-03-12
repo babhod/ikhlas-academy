@@ -7,7 +7,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -22,6 +22,7 @@ export function Header() {
   const navLinks = [
     { path: "/", label: "الرئيسية" },
     { path: "/programs", label: "البرامج التعليمية" },
+    { path: "/library", label: "المكتبة التعليمية" },
     { path: "/about", label: "عن الأكاديمية" },
     { path: "/contact", label: "تواصل معنا" },
   ];
@@ -55,7 +56,7 @@ export function Header() {
               </div>
               <div
                 className={`text-xs transition-colors duration-300 ${
-                  isScrolled ? "text-muted-foreground" : "text-[color-mix(in_srgb,#2750A9_20%,white)]"
+                  isScrolled ? "text-muted-foreground" : "text-blue-100"
                 }`}
               >
                 لتعليم القرآن الكريم
@@ -82,14 +83,12 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-              <a
-              href="https://wa.me/+905464077736"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a
+              href="#register"
               className={`px-6 py-2 rounded-lg transition-all duration-300 ${
                 isScrolled
                   ? "bg-primary text-white hover:bg-primary/90"
-                  : "bg-white text-primary hover:bg-[color-mix(in_srgb,#2750A9_6%,white)]"
+                  : "bg-white text-primary hover:bg-blue-50"
               }`}
             >
               سجّل الآن
@@ -135,14 +134,12 @@ export function Header() {
                 </Link>
               ))}
               <a
-                href="https://wa.me/+905464077736"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#register"
                 onClick={() => setMobileMenuOpen(false)}
                 className={`px-6 py-2 rounded-lg transition-all text-center ${
                   isScrolled
                     ? "bg-primary text-white hover:bg-primary/90"
-                    : "bg-white text-primary hover:bg-[color-mix(in_srgb,#2750A9_6%,white)]"
+                    : "bg-white text-primary hover:bg-blue-50"
                 }`}
               >
                 سجّل الآن

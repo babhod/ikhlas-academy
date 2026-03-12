@@ -1,0 +1,373 @@
+import { useState, useEffect } from "react";
+import { BookOpen, Video, Clock, ArrowLeft, Play } from "lucide-react";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+
+export function LibraryPage() {
+  const [activeTab, setActiveTab] = useState<"articles" | "videos">("articles");
+
+  useEffect(() => {
+    document.title = "المكتبة التعليمية - أكاديمية إخلاص";
+  }, []);
+
+  const articles = [
+    {
+      id: 1,
+      title: "أهمية تعلم التجويد للمبتدئين",
+      excerpt: "تعرف على الأساسيات التي يجب أن يبدأ بها كل مبتدئ في رحلته لتعلم أحكام التجويد وتطبيقها بشكل صحيح.",
+      image: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&h=600&fit=crop",
+      readTime: "5 دقائق"
+    },
+    {
+      id: 2,
+      title: "كيف تحفظ القرآن بطريقة فعالة",
+      excerpt: "استراتيجيات مجربة وأساليب عملية لحفظ القرآن الكريم بإتقان ومراجعته بشكل منتظم.",
+      image: "https://images.unsplash.com/photo-1551006917-3e0021adf687?w=800&h=600&fit=crop",
+      readTime: "7 دقائق"
+    },
+    {
+      id: 3,
+      title: "مخارج الحروف العربية الصحيحة",
+      excerpt: "شرح مفصل لمخارج الحروف العربية وكيفية نطقها بشكل صحيح لتحسين قراءة القرآن الكريم.",
+      image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=600&fit=crop",
+      readTime: "6 دقائق"
+    },
+    {
+      id: 4,
+      title: "فوائد تعلم القراءة العربية للأطفال",
+      excerpt: "اكتشف الفوائد المتعددة لتعليم الأطفال القراءة العربية وأفضل الطرق لجعل التعلم ممتعاً.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+      readTime: "5 دقائق"
+    },
+    {
+      id: 5,
+      title: "أحكام النون الساكنة والتنوين",
+      excerpt: "دليل شامل لفهم وتطبيق أحكام النون الساكنة والتنوين الأربعة: الإظهار والإدغام والإقلاب والإخفاء.",
+      image: "https://images.unsplash.com/photo-1585508889524-eb5a0d8c30af?w=800&h=600&fit=crop",
+      readTime: "8 دقائق"
+    },
+    {
+      id: 6,
+      title: "نصائح للحفاظ على استمرارية التعلم",
+      excerpt: "خطوات عملية للبقاء ملتزماً برحلتك التعليمية وتحقيق التقدم المستمر في تعلم القرآن.",
+      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
+      readTime: "4 دقائق"
+    }
+  ];
+
+  const videos = [
+    {
+      id: 1,
+      title: "مقدمة في علم التجويد",
+      description: "شرح مبسط لعلم التجويد وأهميته في تلاوة القرآن الكريم بطريقة صحيحة.",
+      thumbnail: "https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?w=800&h=600&fit=crop",
+      duration: "15:30"
+    },
+    {
+      id: 2,
+      title: "كيفية نطق الحروف الهجائية",
+      description: "درس عملي لتعليم النطق الصحيح للحروف العربية من مخارجها.",
+      thumbnail: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
+      duration: "12:45"
+    },
+    {
+      id: 3,
+      title: "أحكام المد في التلاوة",
+      description: "شرح تفصيلي لأنواع المدود وأحكامها مع أمثلة تطبيقية من القرآن الكريم.",
+      thumbnail: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=600&fit=crop",
+      duration: "18:20"
+    },
+    {
+      id: 4,
+      title: "نصائح لتحفيظ القرآن للأطفال",
+      description: "أساليب مبتكرة وممتعة لتحفيظ الأطفال القرآن الكريم بطريقة تفاعلية.",
+      thumbnail: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+      duration: "10:15"
+    },
+    {
+      id: 5,
+      title: "تطبيق عملي لأحكام الإدغام",
+      description: "أمثلة تطبيقية من القرآن الكريم لتوضيح أحكام الإدغام بأنواعه.",
+      thumbnail: "https://images.unsplash.com/photo-1495592822108-9e6261896da8?w=800&h=600&fit=crop",
+      duration: "14:50"
+    },
+    {
+      id: 6,
+      title: "كيف تضبط تلاوتك في شهر",
+      description: "برنامج مكثف لمدة شهر لتحسين تلاوتك وإتقان أحكام التجويد الأساسية.",
+      thumbnail: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+      duration: "20:00"
+    }
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[#2750A9] via-blue-700 to-blue-900 py-20 lg:py-32 overflow-hidden">
+        {/* Subtle Islamic Pattern Background */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="library-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                <circle cx="50" cy="50" r="30" fill="none" stroke="white" strokeWidth="1"/>
+                <circle cx="50" cy="50" r="20" fill="none" stroke="white" strokeWidth="1"/>
+                <circle cx="50" cy="50" r="10" fill="none" stroke="white" strokeWidth="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#library-pattern)"/>
+          </svg>
+        </div>
+
+        {/* Decorative Orbs */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            {/* Icon */}
+            <div className="flex justify-center mb-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 border-2 border-white/20">
+                <BookOpen size={64} className="text-white" />
+              </div>
+            </div>
+
+            {/* Title */}
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              المكتبة التعليمية
+            </h1>
+
+            {/* Description */}
+            <p className="text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto">
+              استكشف مجموعة متنوعة من المقالات والفيديوهات التعليمية التي تساعدك على تحسين تلاوتك وفهم أحكام التجويد والقراءة العربية الصحيحة
+            </p>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">{articles.length}</div>
+                <div className="text-sm text-blue-100">مقالة تعليمية</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">{videos.length}</div>
+                <div className="text-sm text-blue-100">فيديو تعليمي</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">+50</div>
+                <div className="text-sm text-blue-100">ساعة محتوى</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <div className="text-3xl font-bold text-white mb-2">مجاناً</div>
+                <div className="text-sm text-blue-100">للجميع</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Navigation Tabs */}
+      <section className="bg-white border-b sticky top-[72px] z-40 shadow-sm">
+        <div className="container mx-auto px-6 md:px-8 lg:px-12">
+          <div className="flex justify-center gap-4 py-6">
+            <button
+              onClick={() => setActiveTab("articles")}
+              className={`flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all ${
+                activeTab === "articles"
+                  ? "bg-primary text-white shadow-lg shadow-primary/30"
+                  : "bg-gray-100 text-foreground hover:bg-gray-200"
+              }`}
+            >
+              <BookOpen size={24} />
+              <span>المقالات</span>
+              <span className={`px-3 py-1 rounded-full text-sm ${
+                activeTab === "articles" ? "bg-white/20" : "bg-white"
+              }`}>
+                {articles.length}
+              </span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab("videos")}
+              className={`flex items-center gap-3 px-8 py-4 rounded-xl font-bold text-lg transition-all ${
+                activeTab === "videos"
+                  ? "bg-primary text-white shadow-lg shadow-primary/30"
+                  : "bg-gray-100 text-foreground hover:bg-gray-200"
+              }`}
+            >
+              <Video size={24} />
+              <span>الفيديوهات</span>
+              <span className={`px-3 py-1 rounded-full text-sm ${
+                activeTab === "videos" ? "bg-white/20" : "bg-white"
+              }`}>
+                {videos.length}
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Articles Section */}
+      {activeTab === "articles" && (
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-6 md:px-8 lg:px-12">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+                  مقالات تعليمية متنوعة
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  مجموعة من المقالات المفيدة لتحسين فهمك وممارستك للقراءة والتلاوة
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {articles.map((article) => (
+                  <div
+                    key={article.id}
+                    className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                  >
+                    {/* Image */}
+                    <div className="relative h-56 overflow-hidden bg-gray-200">
+                      <ImageWithFallback
+                        src={article.image}
+                        alt={article.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg flex items-center gap-2">
+                        <Clock size={16} className="text-primary" />
+                        <span className="text-sm font-semibold text-foreground">{article.readTime}</span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-foreground mb-3 leading-tight group-hover:text-primary transition-colors">
+                        {article.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed mb-4">
+                        {article.excerpt}
+                      </p>
+                      <button className="flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                        <span>اقرأ المزيد</span>
+                        <ArrowLeft size={18} />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Videos Section */}
+      {activeTab === "videos" && (
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-6 md:px-8 lg:px-12">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
+                  فيديوهات تعليمية مميزة
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  دروس مرئية مفصلة تساعدك على إتقان التلاوة والتجويد
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {videos.map((video) => (
+                  <div
+                    key={video.id}
+                    className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                  >
+                    {/* Video Thumbnail */}
+                    <div className="relative h-56 overflow-hidden bg-gray-200 cursor-pointer">
+                      <ImageWithFallback
+                        src={video.thumbnail}
+                        alt={video.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      
+                      {/* Play Icon Overlay */}
+                      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div className="bg-white/90 backdrop-blur-sm rounded-full p-5 group-hover:scale-110 transition-transform">
+                          <Play size={32} className="text-primary fill-primary" />
+                        </div>
+                      </div>
+
+                      {/* Duration Badge */}
+                      <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1 rounded-lg">
+                        <span className="text-sm font-semibold text-white">{video.duration}</span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold text-foreground mb-3 leading-tight group-hover:text-primary transition-colors">
+                        {video.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {video.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Call-to-Action Section */}
+      <section className="relative py-24 overflow-hidden">
+        {/* Background with Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary via-blue-700 to-purple-700"></div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
+        
+        {/* Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="cta-pattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+                <circle cx="40" cy="40" r="25" fill="none" stroke="white" strokeWidth="1"/>
+                <circle cx="40" cy="40" r="15" fill="none" stroke="white" strokeWidth="0.5"/>
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#cta-pattern)"/>
+          </svg>
+        </div>
+
+        <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+              ابدأ رحلتك في تعلم القرآن واللغة العربية معنا
+            </h2>
+            <p className="text-lg lg:text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
+              انضم إلى أكاديمية إخلاص واستفد من برامجنا التعليمية المتميزة مع معلمين متخصصين
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/#register"
+                className="group relative inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-xl font-bold text-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105"
+              >
+                <span>سجّل الآن</span>
+                <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l-5 5 5 5" />
+                </svg>
+              </a>
+
+              <a
+                href="/programs"
+                className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-xl font-bold text-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
+              >
+                <span>تصفح البرامج</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
