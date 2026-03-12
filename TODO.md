@@ -1,14 +1,19 @@
-# TODO: Make hero sections solid primary blue
+# Improve Final CTA Section layered depth in HomePage
 
-## Steps:
+Status: ✅ COMPLETE
 
-- [x] 1. Create TODO.md (done)
-- [x] 2. Edit AboutPage.tsx hero section (done)
-- [x] 3. Edit ContactPage.tsx hero section (done)
-- [x] 4. Edit ProgramsPage.tsx hero section (done)
-- [x] 5. Update TODO.md with completion (done)
-- [x] 6. Test changes and complete task (done)
+**Steps:**
 
-**Task complete**: Hero sections in AboutPage.tsx, ContactPage.tsx, and ProgramsPage.tsx now use solid `bg-primary` (#2750A9) background with `text-primary-foreground` for text (white). Subtitles use `text-primary-foreground/80` for subtle tint. HomePage unchanged.
+1. [x] Confirmed existing implementation
+2. [x] Enhanced pattern (::before): #2750A9 Islamic stars opacity 0.10-0.15, drift anim, denser
+3. [x] Strengthened radial (.cta-radial-light): opacity 0.20 peak, dual ellipses, pulse anim
+4. [x] Updated gradient (::after): richer primary + texture
+5. [x] Edited src/styles/custom.css (3 precise replacements)
+6. [x] Verified HomePage.tsx (no changes needed)
+7. [x] Dev server running - preview bottom section (hard refresh Ctrl+F5 if needed)
+8. [x] Task complete
 
-Files updated successfully without breaking syntax (minor formatting from edits ignored as per rules).
+Layers: pattern(z1) → gradient(z2) → light(z3) → content(z10). Visible depth achieved!
+
+**Primary color:** #2750A9
+**Goal:** Subtle but visible layers for elegance/depth, non-distracting.
