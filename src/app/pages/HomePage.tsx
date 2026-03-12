@@ -422,24 +422,11 @@ export function HomePage() {
       </section>
 
       {/* Final CTA Section - Ultra Premium Dynamic Design */}
-      <section className="relative py-32 lg:py-40 overflow-hidden">
+      <section className="relative py-16 lg:py-22 overflow-hidden">
         {/* Layer 1: Dynamic Gradient Background with Diagonal Split */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-[#0f2744] via-[#2750A9] to-[#1a3d7a]"></div>
           <div className="absolute inset-0 bg-gradient-to-tl from-purple-900/30 via-transparent to-blue-900/30"></div>
-        </div>
-        {/* Layer 2: Animated Mesh Gradient Orbs */}
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/20 rounded-full blur-[120px] animate-pulse"></div>
-          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[100px]" style={{ animation: 'pulse 3s ease-in-out infinite' }}></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-400/10 rounded-full blur-[150px]" style={{ animation: 'pulse 4s ease-in-out infinite' }}></div>
-        </div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 opacity-10 rotate-180">
-          <svg viewBox="0 0 200 200" className="w-full h-full">
-            <path d="M0,0 Q100,0 100,100 Q100,0 200,0" fill="white" opacity="0.5"/>
-            <circle cx="100" cy="50" r="30" fill="none" stroke="white" strokeWidth="2"/>
-            <circle cx="100" cy="50" r="20" fill="none" stroke="white" strokeWidth="1"/>
-          </svg>
         </div>
 
         {/* Layer 5: Floating Particles/Stars */}
@@ -467,14 +454,14 @@ export function HomePage() {
         {/* Main Content Container - Asymmetric Layout */}
         <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
               
               {/* Right Side - Content Card with 3D Perspective */}
               <div className="lg:col-span-7 order-2 lg:order-1">
                 <div className="relative" style={{ perspective: '1500px' }}>
                   {/* 3D Floating Card */}
                   <div 
-                    className="bg-white rounded-3xl shadow-2xl p-10 md:p-14 relative overflow-hidden transform hover:scale-[1.02] transition-all duration-500"
+                    className="bg-white rounded-3xl shadow-2xl p-7 md:p-8 relative overflow-hidden transform hover:scale-[1.02] transition-all duration-500"
                     style={{ 
                       transformStyle: 'preserve-3d',
                       boxShadow: '0 50px 100px -20px rgba(0, 0, 0, 0.5), 0 30px 60px -30px rgba(37, 80, 169, 0.5)'
@@ -487,19 +474,16 @@ export function HomePage() {
                     {/* Inner Content */}
                     <div className="relative z-10">
                       {/* Decorative Top Badge */}
-                      <div className="flex justify-center -mt-20 mb-8">
+                      <div className="flex justify-center -mt-8 mb-4">
                         <div className="relative">
                           <div className="absolute inset-0 bg-gradient-to-br from-primary to-blue-600 rounded-full blur-xl opacity-50"></div>
-                          <div className="relative bg-gradient-to-br from-primary to-blue-600 rounded-full p-8 shadow-2xl border-4 border-white">
-                            <GraduationCap size={64} className="text-white" />
+                          <div className="relative bg-gradient-to-br from-primary to-blue-600 rounded-full p-4 shadow-2xl border-4 border-white">
+                            <GraduationCap size={44} className="text-white" />
                           </div>
-                          {/* Floating Ring */}
-                          <div className="absolute inset-0 border-4 border-white/30 rounded-full scale-125 animate-ping"></div>
                         </div>
                       </div>
-
                       {/* Title with Gradient */}
-                      <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 leading-tight">
+                      <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-4 leading-tight">
                         <span className="bg-gradient-to-l from-[#2750A9] via-blue-600 to-purple-600 bg-clip-text text-transparent">
                           ابدأ رحلتك في تعلم القرآن
                         </span>
@@ -508,12 +492,12 @@ export function HomePage() {
                       </h2>
 
                       {/* Supporting Text */}
-                      <p className="text-lg md:text-xl text-center text-muted-foreground mb-10 leading-relaxed max-w-2xl mx-auto">
+                      <p className="text-base md:text-lg text-center text-muted-foreground mb-5 leading-relaxed max-w-2xl mx-auto">
                         انضم إلى <span className="font-bold text-primary">مئات الطلاب</span> حول العالم الذين يتعلمون القراءة الصحيحة وتلاوة القرآن الكريم بإتقان
                       </p>
 
                       {/* Features in Pills */}
-                      <div className="flex flex-wrap justify-center gap-3 mb-10">
+                      <div className="flex flex-wrap justify-center gap-2 mb-5">
                         <div className="flex items-center gap-2 bg-gradient-to-l from-primary/10 to-blue-50 px-5 py-3 rounded-full border border-primary/20">
                           <CheckCircle2 className="text-primary" size={20} />
                           <span className="font-semibold text-foreground">تقييم مجاني</span>
@@ -529,12 +513,12 @@ export function HomePage() {
                       </div>
 
                       {/* CTA Button with Enhanced Effects */}
-                      <div className="flex justify-center mb-6">
+                      <div className="flex justify-center mb-4">
                         <a
                           href="https://wa.me/+905464077736"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block w-full bg-primary text-white px-10 py-5 rounded-xl font-bold text-xl text-center shadow-[0_0_25px_rgba(255,255,255,0.35)] hover:shadow-[0_0_35px_rgba(255,255,255,0.5)] hover:bg-[color-mix(in_srgb,#2750A9_6%,white)] hover:scale-105 transform transition-all duration-300 hover:text-primary"
+                          className="block w-full bg-primary text-white px-8 py-3.5 rounded-xl font-bold text-lg text-center shadow-[0_0_25px_rgba(255,255,255,0.35)] border border-transparent hover:border-primary hover:shadow-[0_0_35px_rgba(255,255,255,0.5)] hover:bg-[color-mix(in_srgb,#2750A9_6%,white)] hover:scale-105 transform transition-all duration-300 hover:text-primary"
                         >
                           سجّل الآن مجاناً
                         </a>
@@ -562,7 +546,7 @@ export function HomePage() {
               </div>
 
               {/* Left Side - Floating Benefits Stack */}
-              <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
+              <div className="lg:col-span-5 order-1 lg:order-2 space-y-7">
                 {[
                   {
                     icon: <BookOpen size={32} />,
@@ -584,13 +568,6 @@ export function HomePage() {
                     desc: "اختر الأوقات التي تناسب يومك",
                     color: "from-cyan-500 to-cyan-600",
                     shadow: "shadow-cyan-500/50"
-                  },
-                  {
-                    icon: <Shield size={32} />,
-                    title: "ضمان الجودة",
-                    desc: "متابعة دقيقة لتقدمك",
-                    color: "from-green-500 to-green-600",
-                    shadow: "shadow-green-500/50"
                   }
                 ].map((benefit, index) => (
                   <div
@@ -602,10 +579,9 @@ export function HomePage() {
                       opacity: 0
                     }}
                   >
-                    <div className="relative bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 border border-white/50">
+                    <div className="relative bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-105 border border-white/50">
                       {/* Gradient Accent */}
                       <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-br ${benefit.color} opacity-10 rounded-full blur-2xl group-hover:opacity-20 transition-opacity`}></div>
-                      
                       <div className="relative flex items-start gap-4">
                         <div className={`flex-shrink-0 bg-gradient-to-br ${benefit.color} p-4 rounded-xl shadow-lg ${benefit.shadow} text-white`}>
                           {benefit.icon}
@@ -622,14 +598,6 @@ export function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* Bottom Decorative Wave */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 opacity-10">
-          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-full">
-            <path d="M0,0 C300,80 600,80 900,40 C1050,20 1150,0 1200,0 L1200,120 L0,120 Z" fill="white"/>
-          </svg>
-        </div>
-
         <style>{`
           @keyframes fadeInUp {
             from {
