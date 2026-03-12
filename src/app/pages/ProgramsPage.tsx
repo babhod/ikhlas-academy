@@ -16,7 +16,7 @@ const programImages = {
   quran: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
   arabic: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
   tilawa: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
-  hifz: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
+  hifz: "",
 };
 
 // Program image component with fallback
