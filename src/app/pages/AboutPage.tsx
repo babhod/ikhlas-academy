@@ -10,12 +10,12 @@ export function AboutPage() {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white py-16">
+      <section className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">عن أكاديمية إخلاص</h1>
-          <p className="text-xl text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
-            رسالتنا هي نشر العلم وتعليم القرآن الكريم بأسلوب مبسط وفعّال
-          </p>
+            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+              رسالتنا هي نشر العلم وتعليم القرآن الكريم بأسلوب مبسط وفعّال
+            </p>
         </div>
       </section>
 

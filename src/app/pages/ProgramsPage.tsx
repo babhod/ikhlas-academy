@@ -13,10 +13,11 @@ interface Program {
 
 // Images from Unsplash (reliable sources)
 const programImages = {
-  quran: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
-  arabic: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
-  tilawa: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae",
-  hifz: "",
+  quran:
+    "https://res.cloudinary.com/dpiip2agt/image/upload/v1773304491/1773304461026-019ce12d-d583-7eaa-b6ec-98f905ccdc7e_dduaqi.png",
+  arabic: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Learning_Arabic_calligraphy.jpg",
+  tilawa: "https://res.cloudinary.com/dpiip2agt/image/upload/v1773302493/2-quran_pervoo.jpg",
+  hifz: "https://res.cloudinary.com/dpiip2agt/image/upload/v1773302377/1773302305902-019ce10c-f551-7831-b6ed-4c55d621829d_bfkbfr.png",
 };
 
 // Program image component with fallback
@@ -230,13 +231,13 @@ export function ProgramsPage() {
 
   return (
     <div>
-      {/* Header - Unchanged */}
-      <section className="bg-gradient-to-br from-primary to-[color-mix(in_srgb,#2750A9_85%,black)] text-white py-16">
+      {/* Header */}
+      <section className="bg-primary text-primary-foreground py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-4">البرامج التعليمية</h1>
-          <p className="text-xl text-[color-mix(in_srgb,#2750A9_20%,white)] max-w-2xl mx-auto">
-            برامج متنوعة ومتخصصة لتعلم القراءة العربية والقرآن الكريم بأفضل الطرق الحديثة
-          </p>
+            <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+              برامج متنوعة ومتخصصة لتعلم القراءة العربية والقرآن الكريم بأفضل الطرق الحديثة
+            </p>
         </div>
       </section>
 
@@ -269,4 +270,3 @@ export function ProgramsPage() {
     </div>
   );
 }
-
