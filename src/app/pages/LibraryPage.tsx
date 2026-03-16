@@ -101,63 +101,31 @@ export function LibraryPage() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#2750A9] via-blue-700 to-blue-900 py-20 lg:py-32 overflow-hidden">
-        {/* Subtle Islamic Pattern Background */}
-        <div className="absolute inset-0 opacity-10">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="library-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                <circle cx="50" cy="50" r="30" fill="none" stroke="white" strokeWidth="1"/>
-                <circle cx="50" cy="50" r="20" fill="none" stroke="white" strokeWidth="1"/>
-                <circle cx="50" cy="50" r="10" fill="none" stroke="white" strokeWidth="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#library-pattern)"/>
-          </svg>
-        </div>
-
-        {/* Decorative Orbs */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
-
-        <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Icon */}
-            <div className="flex justify-center mb-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-full p-6 border-2 border-white/20">
-                <BookOpen size={64} className="text-white" />
-              </div>
+      {/* Hero Section - Matches AboutPage header */}
+      <section className="bg-primary text-primary-foreground py-16">
+        <div className="container mx-auto px-4 lg:px-12 text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-4">
+            المكتبة التعليمية
+          </h1>
+          <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+            استكشف مجموعة متنوعة من المقالات والفيديوهات التعليمية التي تساعدك على تحسين تلاوتك وفهم أحكام التجويد والقراءة العربية الصحيحة
+          </p>
+          <div className="flex justify-center gap-6 max-w-3xl mx-auto mt-12">
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="text-3xl font-bold text-primary-foreground mb-2">{articles.length}</div>
+              <div className="text-sm text-primary-foreground/80">مقالة تعليمية</div>
             </div>
-
-            {/* Title */}
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              المكتبة التعليمية
-            </h1>
-
-            {/* Description */}
-            <p className="text-lg lg:text-xl text-blue-100 mb-8 leading-relaxed max-w-2xl mx-auto">
-              استكشف مجموعة متنوعة من المقالات والفيديوهات التعليمية التي تساعدك على تحسين تلاوتك وفهم أحكام التجويد والقراءة العربية الصحيحة
-            </p>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">{articles.length}</div>
-                <div className="text-sm text-blue-100">مقالة تعليمية</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">{videos.length}</div>
-                <div className="text-sm text-blue-100">فيديو تعليمي</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">+50</div>
-                <div className="text-sm text-blue-100">ساعة محتوى</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                <div className="text-3xl font-bold text-white mb-2">مجاناً</div>
-                <div className="text-sm text-blue-100">للجميع</div>
-              </div>
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="text-3xl font-bold text-primary-foreground mb-2">{videos.length}</div>
+              <div className="text-sm text-primary-foreground/80">فيديو تعليمي</div>
+            </div>
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="text-3xl font-bold text-primary-foreground mb-2">+50</div>
+              <div className="text-sm text-primary-foreground/80">ساعة محتوى</div>
+            </div>
+            <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+              <div className="text-3xl font-bold text-primary-foreground mb-2">مجاناً</div>
+              <div className="text-sm text-primary-foreground/80">للجميع</div>
             </div>
           </div>
         </div>
@@ -285,7 +253,6 @@ export function LibraryPage() {
                         alt={video.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
-                      
                       {/* Play Icon Overlay */}
                       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors flex items-center justify-center">
                         <div className="bg-white/90 backdrop-blur-sm rounded-full p-5 group-hover:scale-110 transition-transform">
@@ -316,55 +283,32 @@ export function LibraryPage() {
         </section>
       )}
 
-      {/* Call-to-Action Section */}
-      <section className="relative py-24 overflow-hidden">
-        {/* Background with Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary via-blue-700 to-purple-700"></div>
-        
-        {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl"></div>
-        
-        {/* Pattern Overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <pattern id="cta-pattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
-                <circle cx="40" cy="40" r="25" fill="none" stroke="white" strokeWidth="1"/>
-                <circle cx="40" cy="40" r="15" fill="none" stroke="white" strokeWidth="0.5"/>
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#cta-pattern)"/>
-          </svg>
-        </div>
+      {/* Final CTA Section - Matches AboutPage CTA style */}
+      <section className="py-16 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 lg:px-12 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+            ابدأ رحلتك في تعلم القرآن واللغة العربية معنا
+          </h2>
+          <p className="text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+            انضم إلى أكاديمية إخلاص واستفد من برامجنا التعليمية المتميزة مع معلمين متخصصين
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="/#register"
+              className="group relative inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-xl font-bold text-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105"
+            >
+              <span>سجّل الآن</span>
+              <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l-5 5 5 5" />
+              </svg>
+            </a>
 
-        <div className="container mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              ابدأ رحلتك في تعلم القرآن واللغة العربية معنا
-            </h2>
-            <p className="text-lg lg:text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl mx-auto">
-              انضم إلى أكاديمية إخلاص واستفد من برامجنا التعليمية المتميزة مع معلمين متخصصين
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="/#register"
-                className="group relative inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-xl font-bold text-xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105"
-              >
-                <span>سجّل الآن</span>
-                <svg className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l-5 5 5 5" />
-                </svg>
-              </a>
-
-              <a
-                href="/programs"
-                className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-xl font-bold text-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
-              >
-                <span>تصفح البرامج</span>
-              </a>
-            </div>
+            <a
+              href="/programs"
+              className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm text-primary-foreground px-10 py-5 rounded-xl font-bold text-xl border-2 border-white/30 hover:bg-white/20 transition-all duration-300"
+            >
+              <span>تصفح البرامج</span>
+            </a>
           </div>
         </div>
       </section>
