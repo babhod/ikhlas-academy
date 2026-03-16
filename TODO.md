@@ -1,12 +1,12 @@
-# Library Page Background Update Task
+# CTA Background Update for Article Pages ✅
 
-## Plan Steps:
+## Steps:
 
-- [x] Create TODO.md with steps
-- [x] Step 1: Update LibraryPage.tsx hero section to section-light (light bg)
-- [x] Step 2: Update LibraryPage.tsx final CTA section to light bg (py-20 bg-gray-50)
-- [x] Step 3: Adjust colors/text for light backgrounds
-- [x] Step 4: Test with npm run dev, verify /library matches site style
-- [x] Step 5: Update TODO.md to completed, attempt_completion
-
-Current progress: Starting edits...
+- [x] 1. Create TODO.md (tracking progress)
+- [x] 2. Edit src/app/pages/ArticlePage.tsx to replace CTA section with LibraryPage style (`bg-primary`)
+  - Remove complex gradient, SVG pattern, blur overlays
+  - Use `className="py-16 bg-primary text-primary-foreground"`
+  - Simplify structure while keeping CTA content similar
+- [x] 3. Update TODO.md with completion status
+- [x] 4. Verify change affects all 11 articles (single dynamic page)
+- [x] 5. Test in browser and complete task

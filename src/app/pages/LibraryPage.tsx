@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BookOpen, Video, Clock, ArrowLeft, Play } from "lucide-react";
+import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function LibraryPage() {
@@ -51,6 +52,41 @@ export function LibraryPage() {
       excerpt: "خطوات عملية للبقاء ملتزماً برحلتك التعليمية وتحقيق التقدم المستمر في تعلم القرآن.",
       image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
       readTime: "4 دقائق"
+    },
+    {
+      id: 7,
+      title: "كيف تبدأ بتعلم القراءة العربية من الصفر",
+      excerpt: "دليل عملي للمبتدئين لتعلم الحروف والحركات وبناء عادة قراءة يومية بثقة.",
+      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
+      readTime: "6 دقائق"
+    },
+    {
+      id: 8,
+      title: "أساسيات أحكام المد للمبتدئين",
+      excerpt: "شرح مبسط لأنواع المدود مع أمثلة عملية تساعدك على تحسين التلاوة.",
+      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
+      readTime: "7 دقائق"
+    },
+    {
+      id: 9,
+      title: "تمارين يومية لتحسين النطق واللفظ",
+      excerpt: "مجموعة تمارين قصيرة تساعدك على تقوية المخارج وضبط اللسان في القراءة.",
+      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
+      readTime: "5 دقائق"
+    },
+    {
+      id: 10,
+      title: "برنامج أسبوعي لمراجعة الحفظ",
+      excerpt: "خطة عملية لمراجعة القرآن على مدار الأسبوع لضمان التثبيت وعدم النسيان.",
+      image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&h=600&fit=crop",
+      readTime: "6 دقائق"
+    },
+    {
+      id: 11,
+      title: "أخطاء شائعة في التلاوة وكيف تتجنبها",
+      excerpt: "تعرف على أشهر الأخطاء في التلاوة وخطوات عملية لتصحيحها بسرعة.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+      readTime: "7 دقائق"
     }
   ];
 
@@ -188,8 +224,9 @@ export function LibraryPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {articles.map((article) => (
-                  <div
+                  <Link
                     key={article.id}
+                    to={`/library/article/${article.id}`}
                     className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
                   >
                     {/* Image */}
@@ -213,12 +250,12 @@ export function LibraryPage() {
                       <p className="text-muted-foreground leading-relaxed mb-4">
                         {article.excerpt}
                       </p>
-                      <button className="flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                      <span className="flex items-center gap-2 text-primary font-semibold group-hover:gap-3 transition-all">
                         <span>اقرأ المزيد</span>
                         <ArrowLeft size={18} />
-                      </button>
+                      </span>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
