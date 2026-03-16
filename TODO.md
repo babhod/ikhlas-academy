@@ -1,12 +1,10 @@
-# CTA Background Update for Article Pages ✅
+# TODO: Update First Program Content
 
-## Steps:
+## Planned Steps
 
-- [x] 1. Create TODO.md (tracking progress)
-- [x] 2. Edit src/app/pages/ArticlePage.tsx to replace CTA section with LibraryPage style (`bg-primary`)
-  - Remove complex gradient, SVG pattern, blur overlays
-  - Use `className="py-16 bg-primary text-primary-foreground"`
-  - Simplify structure while keeping CTA content similar
-- [x] 3. Update TODO.md with completion status
-- [x] 4. Verify change affects all 11 articles (single dynamic page)
-- [x] 5. Test in browser and complete task
+- [x] 1. Create this TODO.md to track progress
+- [x] 2. Edit src/app/pages/ProgramsPage.tsx to update programs[0] with new content
+- [x] 3. Test by running dev server and previewing /programs page
+- [x] 4. Mark complete and attempt_completion
+
+Progress: Updated first program (revised) and second program with latest content. All updates complete.
