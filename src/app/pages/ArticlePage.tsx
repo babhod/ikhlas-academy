@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useParams, Link } from "react-router";
 import type { ArticleData } from "../data/articles";
 import { getArticleById, getRelatedArticles } from "../data/articles";
-import { Clock, Calendar, User, ArrowLeft, BookOpen, Share2, Heart } from "lucide-react";
+import { Clock, Calendar, User, ArrowLeft, BookOpen, MessageCircle, Heart } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function ArticlePage() {
@@ -96,12 +96,8 @@ export function ArticlePage() {
             </Link>
             <div className="flex items-center gap-4">
               <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors text-foreground">
-                <Heart size={20} />
-                <span className="hidden sm:inline">حفظ</span>
-              </button>
-              <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors text-foreground">
-                <Share2 size={20} />
-                <span className="hidden sm:inline">مشاركة</span>
+                <MessageCircle size={20} className="text-green-500" />
+                <span className="hidden sm:inline">مشاركة عبر الواتساب</span>
               </button>
             </div>
           </div>
@@ -118,8 +114,8 @@ export function ArticlePage() {
               </p>
             </div>
 
-            <div className="prose prose-lg max-w-none" 
-                 dangerouslySetInnerHTML={{ __html: article.fullContent }} />
+            <div className="prose prose-lg max-w-none"
+                  dangerouslySetInnerHTML={{ __html: article.fullContent }} />
 
             {/* Rest of content sections - abbreviated for brevity, full original structure preserved */}
             {/* Highlighted Quote, Sections 2-4, Inline Image, Conclusion - all preserved as is */}
@@ -154,10 +150,6 @@ export function ArticlePage() {
                     دكتور في علوم القرآن والقراءات، حاصل على إجازة في القرآن الكريم برواية حفص عن عاصم. له خبرة تزيد عن 15 عاماً في تعليم التجويد والقراءة العربية للأطفال والكبار. يعمل حالياً كمعلم رئيسي في أكاديمية إخلاص لتعليم القرآن الكريم.
                   </p>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-2">
-                      <BookOpen size={16} className="text-primary" />
-                      <span>25+ مقالة</span>
-                    </div>
                     <div className="flex items-center gap-2">
                       <User size={16} className="text-primary" />
                       <span>معلم معتمد</span>
