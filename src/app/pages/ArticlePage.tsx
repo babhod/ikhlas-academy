@@ -16,29 +16,7 @@ export function ArticlePage() {
     window.scrollTo(0, 0);
   }, [article.title]);
 
-  const relatedArticlesList = [
-    {
-      id: 2,
-      title: "كيف تحفظ القرآن بطريقة فعالة",
-      excerpt: "استراتيجيات مجربة وأساليب عملية لحفظ القرآن الكريم بإتقان ومراجعته بشكل منتظم.",
-      image: "https://images.unsplash.com/photo-1551006917-3e0021adf687?w=800&h=600&fit=crop",
-      readTime: "7 دقائق"
-    },
-    {
-      id: 3,
-      title: "مخارج الحروف العربية الصحيحة",
-      excerpt: "شرح مفصل لمخارج الحروف العربية وكيفية نطقها بشكل صحيح لتحسين قراءة القرآن الكريم.",
-      image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=600&fit=crop",
-      readTime: "6 دقائق"
-    },
-    {
-      id: 4,
-      title: "فوائد تعلم القراءة العربية للأطفال",
-      excerpt: "اكتشف الفوائد المتعددة لتعليم الأطفال القراءة العربية وأفضل الطرق لجعل التعلم ممتعاً.",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
-      readTime: "5 دقائق"
-    }
-  ];
+
 
   return (
     <div className="bg-gray-50">
@@ -108,15 +86,8 @@ export function ArticlePage() {
       <article className="py-16 lg:py-20">
         <div className="container mx-auto px-6 md:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
-              <p className="text-xl leading-relaxed text-foreground">
-                التجويد هو علم يُعنى بإتقان قراءة القرآن الكريم وتلاوته كما أُنزل، وهو من أهم العلوم التي يجب على كل مسلم تعلمها. في هذا المقال، نستعرض أهمية تعلم التجويد للمبتدئين والخطوات الأولى في هذه الرحلة المباركة.
-              </p>
-            </div>
-
             <div className="prose prose-lg max-w-none"
                   dangerouslySetInnerHTML={{ __html: article.fullContent }} />
-
             {/* Rest of content sections - abbreviated for brevity, full original structure preserved */}
             {/* Highlighted Quote, Sections 2-4, Inline Image, Conclusion - all preserved as is */}
           </div>
@@ -175,7 +146,7 @@ export function ArticlePage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {relatedArticlesList.map((relatedArticle) => (
+              {getRelatedArticles(articleId, 3).map((relatedArticle) => (
                 <Link
                   key={relatedArticle.id}
                   to={`/library/article/${relatedArticle.id}`}

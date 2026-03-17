@@ -1,13 +1,15 @@
-# Task: Change Share2 icon to WhatsApp icon (MessageCircle) in ArticlePage - COMPLETED
+# TODO: Implement First Article Update Plan
 
-## Steps:
+## Status: Completed ✅ [7/7]
 
-- [x] 1. Create this TODO.md
-- [x] 2. Edit ArticlePage.tsx:
-  - Replace Share2 import with MessageCircle
-  - Replace `<Share2 size={20} />` with `<MessageCircle size={20} className="text-green-500" />`
-- [x] 3. Update TODO.md (mark steps done)
-- [x] 4. Test: npm run dev, check /library/article/1 Action Bar
-- [x] 5. Complete task
+**Plan Breakdown (Sequential Steps):**
 
-Share2 icon changed to green MessageCircle (same as ContactPage WhatsApp) in ArticlePage Action Bar button.
+1. ✅ **Created TODO.md** - Track progress.
+2. ✅ **Updated src/app/data/articles.ts** - Replaced fullContent (new rich HTML), title, excerpt for id=1 with provided content. Matches SEO metadata.
+3. ✅ **Updated src/app/pages/LibraryPage.tsx** - Replaced hardcoded articles with import { articles, type ArticleData } from '../data/articles'; const libraryArticles: ArticleData[] = articles.slice(0,7);. Syncs previews; fixed import/type errors.
+4. ✅ **Updated src/app/pages/ArticlePage.tsx** - Removed hardcoded relatedArticlesList; uses getRelatedArticles(articleId, 3).map() directly for dynamic related articles.
+5. ✅ **Verified Changes** - All edits applied successfully. No linter errors remaining.
+6. ✅ **Updated TODO.md** - All steps complete.
+7. ✅ **Task Complete** - First article updated with provided content; pages now use shared data source.
+
+You can now test by running `npm run dev` and visiting `/library` (updated previews) and `/library/article/1` (new full content with table, lists, highlights).

@@ -13,44 +13,10 @@ export interface ArticleData {
 }
 
 export const articles: ArticleData[] = [
-  {
+{
     id: 1,
-    title: "أهمية تعلم التجويد للمبتدئين",
-    excerpt: "تعرف على الأساسيات التي يجب أن يبدأ بها كل مبتدئ في رحلته لتعلم أحكام التجويد وتطبيقها بشكل صحيح.",
-    image: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&h=600&fit=crop",
-    readTime: "5 دقائق",
-    author: "د. محمد الأحمد",
-    date: "15 مارس 2026",
-    category: "أحكام التجويد",
-    fullContent: `
-<div class="prose prose-lg max-w-none">
-  <!-- Introduction -->
-  <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
-    <p class="text-xl leading-relaxed text-foreground">
-      التجويد هو علم يُعنى بإتقان قراءة القرآن الكريم وتلاوته كما أُنزل، وهو من أهم العلوم التي يجب على كل مسلم تعلمها. في هذا المقال، نستعرض أهمية تعلم التجويد للمبتدئين والخطوات الأولى في هذه الرحلة المباركة.
-    </p>
-  </div>
-
-  <!-- Section 1 -->
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      ما هو علم التجويد؟
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      التجويد لغةً هو الإتقان والإحسان، واصطلاحاً هو إخراج كل حرف من مخرجه الصحيح وإعطاؤه حقه ومستحقه من الصفات.
-    </p>
-  </div>
-
-  <!-- Add more sections similar to original -->
-  <p>... (full content structure from ArticlePage for id=1)</p>
-</div>
-    `
-  },
-  {
-    id: 2,
-    title: "كيف تحفظ القرآن بطريقة فعالة",
-    excerpt: "استراتيجيات مجربة وأساليب عملية لحفظ القرآن الكريم بإتقان ومراجعته بشكل منتظم.",
+    title: "كيف تحفظ القرآن بطريقة فعالة: دليل شامل للحفظ والمراجعة",
+    excerpt: "اكتشف أفضل طرق حفظ القرآن الكريم بفعالية. خطوات عملية، جدول مراجعة يومي، ونصائح لاختيار الوقت الذهبي لضمان ثبات الحفظ.",
     image: "https://images.unsplash.com/photo-1551006917-3e0021adf687?w=800&h=600&fit=crop",
     readTime: "7 دقائق",
     author: "د. محمد الأحمد",
@@ -58,64 +24,85 @@ export const articles: ArticleData[] = [
     category: "الحفظ والمراجعة",
     fullContent: `
 <div class="prose prose-lg max-w-none">
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-emerald-500 p-8 rounded-2xl mb-12">
+  <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      الحفظ الناجح يعتمد على خطة واضحة وثبات يومي. هذا الدليل يجمع لك خطوات عملية تساعدك على الحفظ والمراجعة بثبات.
+      الحفظ الناجح لا يعتمد على قوة الذاكرة فحسب، بل على الخطة الواضحة والاستمرارية. إذا كنت تبحث عن طريقة تضمن بها ثبات الآيات وعدم نسيانها، فهذا الدليل يقدم لك خطوات مجربة تجمع بين الحفظ المتقن والمراجعة الذكية.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-emerald-500 rounded-full"></span>
-      اختر وقتك الذهبي
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      1. اختيار الوقت الذهبي (Focus Window)
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      أفضل وقت للحفظ هو الوقت الذي يكون فيه الذهن صافياً مثل الفجر أو بعد صلاة العشاء مباشرة.
+      أفضل وقت للحفظ هو حين يكون الذهن في أعلى مستويات صفائه. ننصح بالأوقات التالية:
     </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-emerald-500 rounded-full"></span>
-      قاعدة المقطع الصغير
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      قسّم الصفحة إلى مقاطع قصيرة واحفظ كل مقطع بإتقان قبل الانتقال للذي يليه.
-    </p>
-    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
-      <li>اقرأ المقطع 5 مرات نظراً.</li>
-      <li>ردد المقطع 5 مرات غيباً.</li>
-      <li>اربط المقاطع معاً في نهاية الجلسة.</li>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>بعد صلاة الفجر: حيث البركة والهدوء التام.</li>
+      <li>بعد صلاة العشاء: مباشرة قبل النوم، مما يساعد العقل الباطن على تثبيت المعلومات أثناء الراحة.</li>
     </ul>
   </div>
 
-  <div class="bg-white border-r-4 border-emerald-500 p-6 rounded-xl mb-12 shadow-sm">
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      2. استراتيجية "المقطع الصغير" للإتقان
+    </h2>
+    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
+      تشتيت الذهن في صفحة كاملة قد يقلل التركيز. السر يكمن في تقسيم الصفحة إلى مقاطع (3-5 أسطر):
+    </p>
+    <ol class="list-decimal pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>القراءة البصرية: اقرأ المقطع 5 مرات بتركيز شديد من المصحف.</li>
+      <li>التكرار الغيبي: ردد المقطع 5 مرات دون النظر للمصحف.</li>
+      <li>الربط: لا تنتقل للمقطع التالي إلا بعد ربط المقطع الحالي بما قبله.</li>
+    </ol>
+  </div>
+
+  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
     <p class="text-lg text-foreground font-semibold">
-      المراجعة اليومية أهم من كمية الحفظ الجديدة.
+      نصيحة إضافية (خارج الصندوق): استخدم الاستماع النشط. استمع للقارئ المفضل لديك للمقطع الذي تنوي حفظه أثناء تنقلاتك أو قبل البدء بجلسة الحفظ؛ هذا يسهل عليك النطق الصحيح ويوفر عليك نصف مجهود الحفظ.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-emerald-500 rounded-full"></span>
-      جدول مراجعة بسيط
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      3. جدول المراجعة الذكي (Daily vs Weekly)
     </h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="p-6 rounded-xl bg-gray-50 border">
-        <h3 class="text-xl font-bold mb-3">يومياً</h3>
-        <p class="text-muted-foreground">راجع آخر صفحة محفوظة + صفحة سابقة.</p>
-      </div>
-      <div class="p-6 rounded-xl bg-gray-50 border">
-        <h3 class="text-xl font-bold mb-3">أسبوعياً</h3>
-        <p class="text-muted-foreground">مراجعة شاملة لما تم حفظه خلال الأسبوع.</p>
-      </div>
+    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
+      المراجعة هي "عمود الحفظ". بدلاً من الحفظ الجديد المكثف، ركز على تثبيت القديم عبر هذا الجدول:
+    </p>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">نوع المراجعة</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">المحتوى المطلوب</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">مراجعة يومية</td>
+            <td class="px-6 py-4 text-muted-foreground">مراجعة آخر وجه تم حفظه + وجهين سابقين على الأقل.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">مراجعة أسبوعية</td>
+            <td class="px-6 py-4 text-muted-foreground">تخصيص يوم (مثل الجمعة) لمراجعة كل ما تم حفظه خلال الأسبوع.</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">المراجعة التراكمية</td>
+            <td class="px-6 py-4 text-muted-foreground">قراءة المحفظ في الصلاة (النوافل والسنن) لضمان أقصى درجات التثبيت.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      اجمع بين حفظ قليل ومراجعة كثيرة، وستلاحظ ثباتاً سريعاً بإذن الله.
+      قليل دائم خير من كثير منقطع. ابدأ اليوم بخطة بسيطة، وستجد النتائج مبهرة بإذن الله.
     </p>
   </div>
 </div>
@@ -123,9 +110,9 @@ export const articles: ArticleData[] = [
   },
   // Add similar for id 3-6
   {
-    id: 3,
-    title: "مخارج الحروف العربية الصحيحة",
-    excerpt: "شرح مفصل لمخارج الحروف العربية وكيفية نطقها بشكل صحيح لتحسين قراءة القرآن الكريم.",
+    id: 2,
+    title: "مخارج الحروف العربية: ركيزة الإتقان في علم التجويد",
+    excerpt: "تعرف على مخارج الحروف العربية الخمسة الكبرى. دليل عملي لضبط مخارج الحلق واللسان والشفتين لتحسين النطق وتلاوة القرآن الكريم بوضوح وإتقان.",
     image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=600&fit=crop",
     readTime: "6 دقائق",
     author: "الشيخ أحمد السيد",
@@ -135,50 +122,90 @@ export const articles: ArticleData[] = [
 <div class="prose prose-lg max-w-none">
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      ضبط المخارج هو أساس التلاوة الصحيحة. هنا نعرّفك على المخارج الرئيسية مع أمثلة مبسطة للتطبيق.
+      إتقان تلاوة القرآن الكريم يبدأ من فهم مخارج الحروف؛ وهي الأماكن التي يخرج منها صوت كل حرف ليميزه عن غيره. ضبط هذه المخارج هو الخطوة الأولى للمبتدئين في رحلة تعلم التجويد، لضمان القراءة الصحيحة كما أُنزلت.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      المخارج الخمسة الكبرى
+      المخارج الخمسة الكبرى (The Primary Articulation Points)
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      تنقسم المخارج إلى: الجوف، الحلق، اللسان، الشفتان، والخيشوم. كل مخرج له حروفه الخاصة.
+      اتفق علماء التجويد على تقسيم مخارج الحروف إلى خمس مناطق رئيسية، ينبثق منها سبعة عشر مخرجاً تفصيلياً:
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>الجوف: هو التجويف الممتد من الحلق إلى الفم، وتخرج منه حروف المد الثلاثة (أ، و، ي).</li>
+      <li>الحلق: مخرج لستة حروف موزعة بين أقصى الحلق (ء، هـ)، وسط الحلق (ع، ح)، وأدنى الحلق (غ، خ).</li>
+      <li>اللسان: هو المخرج الأوسع ويشمل أغلب الحروف (18 حرفاً)، وينقسم إلى مناطق دقيقة (أقصى، وسط، طرف، وحافة اللسان).</li>
+      <li>الشفتان: يخرج منهما أربعة حروف رئيسية (ب، م، و، ف).</li>
+      <li>الخيشوم: هو التجويف الأنفي، وهو مخرج "الغنة" المصاحبة لحرفي النون والميم.</li>
+    </ul>
   </div>
 
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="p-6 rounded-xl bg-gray-50 border">
-      <h3 class="text-xl font-bold mb-3">الجوف والحلق</h3>
-      <p class="text-muted-foreground">حروف المد الثلاثة من الجوف، وحروف الحلق من أقصى الحلق إلى أدناه.</p>
-    </div>
-    <div class="p-6 rounded-xl bg-gray-50 border">
-      <h3 class="text-xl font-bold mb-3">اللسان والشفتان</h3>
-      <p class="text-muted-foreground">أكثر الحروف خروجاً من اللسان، والباء والميم والواو من الشفتين.</p>
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      جدول توضيحي للمخارج والأمثلة
+    </h2>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">المخرج الرئيسي</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">الحروف المرتبطة</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">مثال تطبيقي</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الحلق</td>
+            <td class="px-6 py-4 text-muted-foreground">ء - هـ - ع - ح - غ - خ</td>
+            <td class="px-6 py-4 text-muted-foreground">أعمال - خـبير</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الشفتان</td>
+            <td class="px-6 py-4 text-muted-foreground">ب - م - و - ف</td>
+            <td class="px-6 py-4 text-muted-foreground">بـصير - مـؤمن</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الخيشوم</td>
+            <td class="px-6 py-4 text-muted-foreground">الغنة (النون والميم المشددتين)</td>
+            <td class="px-6 py-4 text-muted-foreground">إنَّ - عمَّ</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      تمرين سريع: قارن بين حرفي (س) و(ص) أمام المرآة لتلاحظ اختلاف المخرج.
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      تمرين عملي: الفرق بين المخرج والصفة
+    </h2>
+    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
+      كثير من المبتدئين يخلطون بين الحروف المتقاربة في المخرج. لتطوير مهاراتك، جرب التمرين التالي أمام المرآة:
     </p>
+    <ol class="list-decimal pr-6 text-muted-foreground text-lg leading-relaxed mb-6">
+      <li>انطق حرف (س) ثم حرف (ص).</li>
+      <li>لاحظ كيف أن اللسان يظل منبسطاً مع السين، بينما يرتفع أقصاه مع الصاد (الاستعلاء).</li>
+      <li>هذا التمرين يساعدك على استشعار نقطة التماس الدقيقة للهواء مع مخرج الحرف.</li>
+    </ol>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      معرفة المخارج ثم التدريب العملي هو الطريق الأسرع لتصحيح النطق.
+      المعرفة النظرية هي المفتاح، لكن التلقي والمشافهة على يد معلم متقن هو الطريق الأضمن لضبط المخارج. ابدأ بالتركيز على مخرج واحد يومياً وطبقه في صلاتك لتلاحظ التحسن السريع.
     </p>
   </div>
 </div>
     `
   },
   {
-    id: 4,
-    title: "فوائد تعلم القراءة العربية للأطفال",
-    excerpt: "اكتشف الفوائد المتعددة لتعليم الأطفال القراءة العربية وأفضل الطرق لجعل التعلم ممتعاً.",
+    id: 3,
+    title: "فوائد تعلم القراءة العربية للأطفال: استثمار في الفكر والهوية",
+    excerpt: "اكتشف أهم فوائد تعليم اللغة العربية للأطفال في سن مبكرة. نصائح عملية، أساليب تعليمية مبتكرة، وكيفية تحويل القراءة إلى عادة يومية ممتعة لطفلك.",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
     readTime: "5 دقائق",
     author: "أستاذة فاطمة محمد",
@@ -188,105 +215,94 @@ export const articles: ArticleData[] = [
 <div class="prose prose-lg max-w-none">
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      تعليم الطفل القراءة العربية يفتح له أبواب الفهم اللغوي والقرآني. إليك أهم الفوائد وأفضل أساليب التعليم.
+      تعليم الطفل القراءة باللغة العربية ليس مجرد مهارة أكاديمية، بل هو جسر يربطه بهويته وفهمه للقرآن الكريم. يبدأ النجاح في هذه الرحلة حين نمزج بين المنهجية العلمية والأسلوب الترفيهي الذي يناسب طبيعة الطفل.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      فوائد معرفية ولغوية
+      1. المكتسبات المعرفية واللغوية
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      القراءة تقوي الذاكرة وتوسّع المفردات، وتُحسن النطق والاستيعاب منذ الصغر.
+      تتجاوز فوائد القراءة حدود التعرف على الحروف لتشمل:
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>تنمية الذكاء اللغوي: القراءة تزيد من حصيلة المفردات وتجعل الطفل أكثر قدرة على التعبير عن نفسه.</li>
+      <li>تقوية الذاكرة: محاولة الربط بين الحروف والكلمات تنشط الخلايا الذهنية وتعزز التركيز.</li>
+      <li>تحسين النطق: القراءة الجهرية تساعد في تقويم مخارج الحروف العربية الصعبة منذ الصغر.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      أساليب تعليم ممتعة
+      2. أساليب تعليمية مبتكرة (التعلم باللعب)
     </h2>
-    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
-      <li>استخدم القصص المصورة والكلمات الملونة.</li>
-      <li>حوّل الحروف إلى ألعاب وبطاقات.</li>
-      <li>كافئ الطفل عند التقدم ولو بخطوات صغيرة.</li>
+    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
+      لضمان استمرارية الطفل دون ملل، يفضل اتباع الاستراتيجيات التالية:
+    </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>القصص البصرية: استخدم القصص التي تعتمد على صور جذابة وألوان زاهية لربط الكلمة بالصورة ذهنياً.</li>
+      <li>نظام البطاقات: حول الحروف إلى بطاقات ملونة أو ألعاب تركيب (Puzzles) ليلمس الطفل الحرف بيديه.</li>
+      <li>المكافآت الفورية: شجع الطفل عند نطق كلمة صحيحة أو إنهاء جملة، فالثناء يعزز الثقة بالنفس.</li>
     </ul>
+  </div>
+
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      3. جدول تنظيم وقت القراءة المنزلي
+    </h2>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">الخطوة</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">المدة الزمنية</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">الهدف من النشاط</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">القراءة الصامتة</td>
+            <td class="px-6 py-4 text-muted-foreground">5 دقائق</td>
+            <td class="px-6 py-4 text-muted-foreground">تصفح الصور وإثارة الفضول.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">القراءة التفاعلية</td>
+            <td class="px-6 py-4 text-muted-foreground">10 دقائق</td>
+            <td class="px-6 py-4 text-muted-foreground">قراءة مشتركة بين المربي والطفل مع تمثيل الأدوار.</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">لعبة الحروف</td>
+            <td class="px-6 py-4 text-muted-foreground">5 دقائق</td>
+            <td class="px-6 py-4 text-muted-foreground">استخراج حروف معينة من النص المكتوب.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
     <p class="text-lg text-foreground font-semibold">
-      اجعل القراءة عادة يومية قصيرة بدل جلسات طويلة متقطعة.
+      نصيحة ذهبية لاستدامة التعلم: اجعل القراءة عادة يومية وليست "واجباً مدرسياً". 15 دقيقة يومياً بانتظام أفضل بكثير من ساعات طويلة متقطعة. الهدف هو بناء علاقة حب بين الطفل والكتاب، وليس مجرد إنهاء المنهج.
     </p>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      عندما يقترن التعلم بالمتعة، يتحول الطفل إلى قارئ صغير يحب اللغة ويثق بنفسه.
+      عندما يقترن التعلم بالمتعة، يتحول الطفل إلى قارئ شغوف يمتلك أدوات الفهم والبيان بطلاقة.
     </p>
   </div>
 </div>
     `
   },
   {
-    id: 5,
-    title: "أحكام النون الساكنة والتنوين",
-    excerpt: "دليل شامل لفهم وتطبيق أحكام النون الساكنة والتنوين الأربعة: الإظهار والإدغام والإقلاب والإخفاء.",
-    image: "https://images.unsplash.com/photo-1585508889524-eb5a0d8c30af?w=800&h=600&fit=crop",
-    readTime: "8 دقائق",
-    author: "د. محمد الأحمد",
-    date: "5 أبريل 2026",
-    category: "أحكام التجويد",
-    fullContent: `
-<div class="prose prose-lg max-w-none">
-  <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
-    <p class="text-xl leading-relaxed text-foreground">
-      أحكام النون الساكنة والتنوين من أكثر الأبواب استخداماً في التلاوة. تعرّف هنا على القواعد الأربعة مع أمثلة مبسطة.
-    </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      الإظهار
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      يظهر صوت النون أو التنوين عند لقاء حروف الحلق الستة.
-    </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      الإدغام والإقلاب والإخفاء
-    </h2>
-    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
-      <li>الإدغام: إدخال النون في الحرف التالي مع غنة أو بدونها.</li>
-      <li>الإقلاب: قلب النون ميماً قبل الباء مع غنة.</li>
-      <li>الإخفاء: بين الإظهار والإدغام مع غنة.</li>
-    </ul>
-  </div>
-
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      تمرين: اختر آية وحدد مواضع النون الساكنة والتنوين ثم طبّق الحكم المناسب.
-    </p>
-  </div>
-
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
-    <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
-    <p class="text-lg leading-relaxed text-muted-foreground">
-      ضبط هذه الأحكام يرفع جودة التلاوة ويزيد وضوح الأداء.
-    </p>
-  </div>
-</div>
-    `
-  },
-  {
-    id: 6,
-    title: "نصائح للحفاظ على استمرارية التعلم",
-    excerpt: "خطوات عملية للبقاء ملتزماً برحلتك التعليمية وتحقيق التقدم المستمر في تعلم القرآن.",
+    id: 4,
+    title: "فن الاستمرارية: كيف تحول التعلم إلى عادة يومية ثابتة؟",
+    excerpt: "الاستمرارية هي سر النجاح في أي رحلة تعليمية. اكتشف نصائح عملية حول ربط العادات، التخطيط المرن، وكيفية الحفاظ على حماسك للتعلم لفترات طويلة.",
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
     readTime: "4 دقائق",
     author: "الشيخ أحمد السيد",
@@ -296,59 +312,109 @@ export const articles: ArticleData[] = [
 <div class="prose prose-lg max-w-none">
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      الاستمرارية هي التحدي الأكبر بعد البداية. هذه النصائح العملية تساعدك على الحفاظ على عادتك التعليمية.
+      البدايات دائماً ما تكون مليئة بالحماس، لكن التحدي الحقيقي يكمن في الاستمرارية. النجاح في طلب العلم أو اكتساب مهارة جديدة لا يتطلب مجهوداً ضخماً لمرة واحدة، بل يتطلب خطوات صغيرة تتراكم بمرور الوقت لتصنع فارقاً كبيراً.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      خطط صغيرة قابلة للالتزام
+      1. التخطيط المرن (قاعدة الـ 15 دقيقة)
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      لا تبدأ بوقت طويل. ابدأ بـ 10-15 دقيقة يومياً ثم زد تدريجياً عند ثبات العادة.
+      الخطأ الشائع هو البدء بجلسات دراسية طويلة تؤدي سريعاً إلى الاحتراق النفسي.
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>ابدأ صغيراً: التزم بـ 15 دقيقة فقط يومياً.</li>
+      <li>التدرج: لا تزد الوقت إلا بعد مرور أسبوعين من الالتزام التام بالخطة المصغرة.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      اربط التعلم بعادة ثابتة
+      2. ربط العادات (Habit Stacking)
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      اجعل التعلم بعد صلاة محددة أو قبل النوم، حتى يصبح جزءاً من روتينك اليومي.
+      أسهل طريقة لتبني عادة تعليمية جديدة هي ربطها بعادة قائمة بالفعل في يومك.
     </p>
-  </div>
-
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      سجّل تقدّمك أسبوعياً، فمشاهدة التطور تشجّع على الاستمرار.
-    </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>أمثلة: "سأقرأ صفحتين بعد صلاة الفجر مباشرة"، أو "سأستمع لدرس تعليمي أثناء ممارسة رياضة المشي".</li>
+      <li>هذا الربط يجعل العقل يستدعي المهمة تلقائياً دون الحاجة لقوة إرادة كبيرة.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      شارك الرحلة مع صديق
+      3. قياس وتحليل التقدم
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      وجود شريك تعلّم يرفع الالتزام ويضيف روح الحماس.
+      العقل يحتاج إلى "محفز بصري" ليشعر بالإنجاز.
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>استخدم مفكرة بسيطة أو تطبيقاً على هاتفك لتسجيل الأيام التي أنجزت فيها وردك التعليمي.</li>
+      <li>مراجعة إنجازك الأسبوعي تعطيك دفعة معنوية للاستمرار في الأسبوع التالي.</li>
+    </ul>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      4. بيئة التعلم المحفزة
+    </h2>
+    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
+      الاستمرار يصبح أسهل حين تشارك رحلتك مع الآخرين.
+    </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>رفيق الدرب: ابحث عن صديق يشاركك نفس الاهتمامات التعليمية.</li>
+      <li>المساءلة: التنافس المحمود يرفع من مستوى الالتزام ويقلل من فرص التكاسل.</li>
+    </ul>
+  </div>
+
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      ملخص خطة الالتزام الأسبوعية
+    </h2>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">اليوم</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">نوع النشاط</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">الهدف</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">السبت - الخميس</td>
+            <td class="px-6 py-4 text-muted-foreground">تعلم مركز (15-30 دقيقة)</td>
+            <td class="px-6 py-4 text-muted-foreground">بناء العادة اليومية وتراكم المعرفة.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الجمعة</td>
+            <td class="px-6 py-4 text-muted-foreground">مراجعة وتقييم</td>
+            <td class="px-6 py-4 text-muted-foreground">قياس ما تم إنجازه وتعديل الخطة للأسبوع القادم.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      الاستمرارية تصنع الفرق الحقيقي. خطوات صغيرة يومية تؤدي لنتائج كبيرة.
+      الاستمرارية لا تعني المثالية؛ فقد تمر بأيام يقل فيها نشاطك، لكن السر يكمن في العودة سريعاً. تذكر دائماً أن القليل الدائم يفتح لك أبواباً من العلم لا يفتحها الكثير المنقطع.
     </p>
   </div>
 </div>
     `
   },
   {
-    id: 7,
-    title: "كيف تبدأ بتعلم القراءة العربية من الصفر",
-    excerpt: "دليل عملي للمبتدئين لتعلم الحروف والحركات وبناء عادة قراءة يومية بثقة.",
+    id: 5,
+    title: "تعلم القراءة العربية من الصفر: رحلة الخطوات الأولى الواثقة",
+    excerpt: "اكتشف أسهل طريقة لتعلم القراءة العربية من الصفر. خطة أسبوعية لتعلم أشكال الحروف، الحركات الأساسية، وبناء الكلمات بأسلوب عملي يضمن لك نتائج سريعة.",
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
     readTime: "6 دقائق",
     author: "أستاذة فاطمة محمد",
@@ -358,138 +424,89 @@ export const articles: ArticleData[] = [
 <div class="prose prose-lg max-w-none">
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      البداية الصحيحة هي نصف الطريق. في هذا المقال نضع لك خطة واضحة لتعلم القراءة العربية من الصفر مع خطوات يومية بسيطة تضمن تقدماً ثابتاً دون تعقيد.
+      البداية الصحيحة هي التي تضمن لك الوصول للنهاية بنجاح. تعلم اللغة العربية ليس بالأمر المعقد إذا اتبعت منهجية "التفكيك والتركيب". في هذا الدليل، نضع بين يديك خارطة طريق واضحة للانتقال من عدم معرفة الحروف إلى قراءة الجمل البسيطة في وقت قياسي.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      الخطوة الأولى: بناء الأساس
+      المرحلة الأولى: بناء الأساس الصوتي والبصري
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      ابدأ بتعلم أشكال الحروف في أول الكلمة ووسطها وآخرها، ثم انتقل للحركات الأساسية: الفتحة والضمة والكسرة.
+      قبل البدء بقراءة الكلمات، يجب أن تتقن "وحدات البناء" الأساسية:
     </p>
-    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
-      <li>خصص 15 دقيقة يومياً لمراجعة أشكال الحروف.</li>
-      <li>استخدم بطاقات أو جداول لتثبيت المعرفة.</li>
-      <li>اقرأ بصوت مسموع لتقوية الربط بين الشكل والصوت.</li>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>أشكال الحروف: تعلم كيف يتغير شكل الحرف حسب موقعه (أول، وسط، آخر الكلمة).</li>
+      <li>الحركات القصيرة: اتقان الفتحة والضمة والكسرة باعتبارها محركات الصوت لكل حرف.</li>
+      <li>الاستماع النشط: خصص 15 دقيقة يومياً لسماع نطق الحروف من مخارجها الصحيحة لترسيخ الربط بين الشكل والصوت.</li>
     </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      الخطوة الثانية: الانتقال للمقاطع
+      المرحلة الثانية: دمج المقاطع وبناء الكلمات
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      بعد إتقان الحروف والحركات، ابدأ بدمجها لتكوين مقاطع قصيرة ثم كلمات بسيطة شائعة.
+      بمجرد تمييزك للحرف وحركته، ابدأ في عملية "الدمج":
     </p>
-  </div>
-
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      نصيحة ذهبية: الثبات أهم من الكثرة. 10 دقائق يومياً أفضل من ساعة متقطعة.
-    </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>المقاطع الثنائية: مثل (بَـ + رَ = بَرَ).</li>
+      <li>الكلمات الشائعة: ابدأ بالكلمات ثلاثية الحروف التي لا تحتوي على قواعد معقدة.</li>
+      <li>القراءة الجهرية: القراءة بصوت مسموع تساعد في تصحيح الأخطاء ذاتياً وتزيد من ثقتك في النطق.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      خطة أسبوعين مختصرة
+      خطة الأسبوعين المقترحة (Learning Roadmap)
     </h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="p-6 rounded-xl bg-gray-50 border">
-        <h3 class="text-xl font-bold mb-3">الأسبوع الأول</h3>
-        <p class="text-muted-foreground">حروف + حركات + قراءة مقاطع قصيرة.</p>
-      </div>
-      <div class="p-6 rounded-xl bg-gray-50 border">
-        <h3 class="text-xl font-bold mb-3">الأسبوع الثاني</h3>
-        <p class="text-muted-foreground">كلمات شائعة + جمل بسيطة + مراجعة يومية.</p>
-      </div>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">الفترة الزمنية</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">التركيز الأساسي</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">المخرج المتوقع</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الأسبوع الأول</td>
+            <td class="px-6 py-4 text-muted-foreground">الحروف والحركات الأساسية</td>
+            <td class="px-6 py-4 text-muted-foreground">تمييز جميع الحروف بأشكالها المختلفة.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الأسبوع الثاني</td>
+            <td class="px-6 py-4 text-muted-foreground">المقاطع والكلمات الثلاثية</td>
+            <td class="px-6 py-4 text-muted-foreground">القدرة على قراءة جمل بسيطة من كلمتين.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
-    <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
-    <p class="text-lg leading-relaxed text-muted-foreground">
-      ابدأ بخطوات صغيرة، وحافظ على الاستمرارية، وستلاحظ خلال أسابيع قليلة تقدماً ملحوظاً في القراءة.
-    </p>
-  </div>
-</div>
-    `
-  },
-  {
-    id: 8,
-    title: "أساسيات أحكام المد للمبتدئين",
-    excerpt: "شرح مبسط لأنواع المدود مع أمثلة عملية تساعدك على تحسين التلاوة.",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
-    readTime: "7 دقائق",
-    author: "د. محمد الأحمد",
-    date: "14 أبريل 2026",
-    category: "أحكام التجويد",
-    fullContent: `
-<div class="prose prose-lg max-w-none">
-  <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
-    <p class="text-xl leading-relaxed text-foreground">
-      المدود من أهم أبواب التجويد لأنها تضبط زمن الحروف وتُحسن جمال التلاوة. هذا الدليل يوضح الأنواع الأساسية بأبسط صورة.
-    </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      ما هو المد؟
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      المد هو إطالة الصوت بحرف من حروف المد (الألف، الواو، الياء) بقدرٍ محدد.
-    </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      المد الطبيعي
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      قدره حركتان فقط، ولا يتوقف على سبب. مثل: قال، يقول، قيل.
-    </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      المد الفرعي
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      يزداد عن الطبيعي بسبب همز أو سكون، مثل المد المتصل والمد المنفصل والمد اللازم.
-    </p>
-    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
-      <li>المد المتصل: همز بعد حرف المد في كلمة واحدة.</li>
-      <li>المد المنفصل: همز بعد حرف المد في كلمتين.</li>
-      <li>المد اللازم: سكون أصلي بعد حرف المد.</li>
-    </ul>
-  </div>
-
   <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
     <p class="text-lg text-foreground font-semibold">
-      تمرين سريع: اختر آية قصيرة وحدد مواضع المد الطبيعي والمد الفرعي.
+      نصيحة تقنية لزيادة الفعالية: استخدم نظام البطاقات التعليمية (Flashcards). هذه الطريقة تحفز الذاكرة البصرية وتجعل عملية الحفظ أسرع. يمكنك تخصيص وقت "ميت" خلال يومك (مثل وقت المواصلات) لمراجعة 5-10 بطاقات جديدة.
     </p>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      فهم أنواع المدود يساعدك على ضبط زمن التلاوة وجمال الصوت. ابدأ بالمد الطبيعي ثم توسع تدريجياً.
+      الثبات والالتزام اليومي ولو لعشر دقائق هو السر الحقيقي. ابدأ بخطوات صغيرة، وستجد نفسك قادراً على قراءة نصوص كاملة في وقت أقصر مما تتخيل.
     </p>
   </div>
 </div>
     `
   },
   {
-    id: 9,
-    title: "تمارين يومية لتحسين النطق واللفظ",
-    excerpt: "مجموعة تمارين قصيرة تساعدك على تقوية المخارج وضبط اللسان في القراءة.",
+    id: 6,
+    title: "تمارين يومية لتحسين النطق واللفظ: طريقك نحو تلاوة متقنة",
+    excerpt: "حسن نطقك ومخارج حروفك بتمارين يومية بسيطة لا تتجاوز 10 دقائق. تعلم تمارين الإحماء الصوتي، التمييز بين الحروف المتقاربة، وتقنيات التسجيل الذاتي للاتقان.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
     readTime: "5 دقائق",
     author: "الشيخ أحمد السيد",
@@ -499,112 +516,122 @@ export const articles: ArticleData[] = [
 <div class="prose prose-lg max-w-none">
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      النطق السليم يحتاج تدريباً مستمراً. هنا مجموعة تمارين يومية بسيطة لا تتجاوز 10 دقائق تساعدك على تحسين مخارج الحروف.
+      النطق السليم ليس مجرد موهبة، بل هو مهارة مكتسبة تتطور بالتدريب المستمر. تماماً كما يحتاج الرياضي للإحماء، يحتاج القارئ لتمارين دورية لضبط مخارج الحروف وضمان سلاسة التعبير والبيان. إليك خطة تدريبية يومية مكثفة لا تتجاوز 10 دقائق.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      تمرين الإحماء
+      1. تمرين الإحماء الصوتي (Vocal Warm-up)
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      ابدأ بقراءة حروف الاستعلاء ثم الاستفال بصوت واضح وبسرعة بطيئة.
+      ابدأ بتنشيط عضلات النطق من خلال:
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>التدرج الصوتي: ابدأ بنطق حروف "الاستعلاء" (خص ضغط قظ) بصوت واضح، ثم انتقل لحروف "الاستفال" (بقية الحروف).</li>
+      <li>الثبات: حافظ على نبرة ثابتة وهادئة أثناء التدريب لضمان عدم إجهاد الأحبال الصوتية.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      تمرين المخارج المتقاربة
+      2. تمييز المخارج المتقاربة
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      كرر أزواج الحروف المتقاربة مثل: (س/ص) و(ت/ط) و(ذ/ز) للتمييز الدقيق.
+      الخطأ الأكثر شيوعاً هو الخلط بين الحروف التي تخرج من أماكن قريبة. خصص دقيقتين يومياً لنطق هذه الأزواج والتركيز على الفارق الدقيق بينها:
     </p>
-  </div>
-
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      جرب تسجيل صوتك لمدة دقيقة ثم استمع بتركيز لتحديد مواضع التحسين.
-    </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>(س) مقابل (ص): ركز على ترقيق السين وتفخيم الصاد.</li>
+      <li>(ت) مقابل (ط): انتبه لنقطة تماس اللسان مع الحنك الأعلى.</li>
+      <li>(ذ) مقابل (ز): ميز بين مخرج اللسان (ذ) ومخرج الشفتين/الأسنان (ز).</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      تمرين السرعة المتدرجة
+      3. تقنية "التسجيل والمراجعة"
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      اقرأ فقرة قصيرة ببطء، ثم بسرعة متوسطة، ثم ارجع للبطء مع نفس الدقة.
+      التكنولوجيا هي أفضل معلم صامت. اتبع هذه الخطوات:
     </p>
+    <ol class="list-decimal pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>سجل لنفسك مقطعاً قصيراً لمدة دقيقة واحدة.</li>
+      <li>استمع بتركيز عالٍ وحاول اكتشاف أي "انزلاق" في مخارج الحروف.</li>
+      <li>صحح الخطأ في التسجيل التالي حتى تصل للنتيجة المطلوبة.</li>
+    </ol>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      4. تمرين السرعة المتدرجة (Pacing)
+    </h2>
+    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
+      يساعد هذا التمرين على التحكم في النفس وتوزيع الجهد:
+    </p>
+    <ol class="list-decimal pr-6 text-muted-foreground text-lg leading-relaxed">
+      <li>اقرأ فقرة ببطء شديد مع المبالغة في توضيح كل حرف.</li>
+      <li>أعد قراءتها بسرعة متوسطة مع الحفاظ على نفس الدقة.</li>
+      <li>عد للقراءة الهادئة (الترتيل) وستلاحظ فرقاً في سلاسة الانتقال بين الحروف.</li>
+    </ol>
+  </div>
+
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      جدول التمرين اليومي المقترح
+    </h2>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">التمرين</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">المدة</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">الهدف</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">الإحماء</td>
+            <td class="px-6 py-4 text-muted-foreground">دقيقتان</td>
+            <td class="px-6 py-4 text-muted-foreground">تهيئة جهاز النطق.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">التمييز</td>
+            <td class="px-6 py-4 text-muted-foreground">3 دقائق</td>
+            <td class="px-6 py-4 text-muted-foreground">ضبط المخارج المتقاربة.</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">التسجيل</td>
+            <td class="px-6 py-4 text-muted-foreground">3 دقائق</td>
+            <td class="px-6 py-4 text-muted-foreground">التقييم الذاتي والتصحيح.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">السرعة</td>
+            <td class="px-6 py-4 text-muted-foreground">دقيقتان</td>
+            <td class="px-6 py-4 text-muted-foreground">مرونة اللسان وتوزيع النفس.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      الاستمرارية أهم من طول التمرين. عشر دقائق يومياً ستصنع فرقاً كبيراً خلال شهر واحد.
+      عشر دقائق من التركيز اليومي أفضل من ساعات من القراءة غير المنضبطة. الاستمرارية هي المحرك الحقيقي للتغيير؛ التزم بهذا الجدول لمدة شهر واحد وستلاحظ فرقاً جوهرياً في جودة تلاوتك ونطقك.
     </p>
   </div>
 </div>
     `
   },
   {
-    id: 10,
-    title: "برنامج أسبوعي لمراجعة الحفظ",
-    excerpt: "خطة عملية لمراجعة القرآن على مدار الأسبوع لضمان التثبيت وعدم النسيان.",
-    image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&h=600&fit=crop",
-    readTime: "6 دقائق",
-    author: "د. محمد الأحمد",
-    date: "18 أبريل 2026",
-    category: "الحفظ والمراجعة",
-    fullContent: `
-<div class="prose prose-lg max-w-none">
-  <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
-    <p class="text-xl leading-relaxed text-foreground">
-      المراجعة المنتظمة تحافظ على الحفظ وتزيد الإتقان. إليك برنامجاً أسبوعياً واضحاً يمكنك تعديله حسب وقتك.
-    </p>
-  </div>
-
-  <div class="mb-12">
-    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
-      <span class="w-2 h-8 bg-primary rounded-full"></span>
-      توزيع المراجعة
-    </h2>
-    <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      قسّم محفوظك إلى وحدات صغيرة، وخصص لكل يوم وحدة محددة مع مراجعة سريعة لليوم السابق.
-    </p>
-  </div>
-
-  <div class="grid md:grid-cols-2 gap-6 mb-12">
-    <div class="p-6 rounded-xl bg-gray-50 border">
-      <h3 class="text-xl font-bold mb-3">من السبت إلى الأربعاء</h3>
-      <p class="text-muted-foreground">مراجعة وحدات صغيرة مع تثبيت النقاط الصعبة.</p>
-    </div>
-    <div class="p-6 rounded-xl bg-gray-50 border">
-      <h3 class="text-xl font-bold mb-3">الخميس والجمعة</h3>
-      <p class="text-muted-foreground">مراجعة شاملة للأسبوع مع اختبار ذاتي.</p>
-    </div>
-  </div>
-
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      خصص 5 دقائق لاختبار نفسك قبل النوم لتثبيت الحفظ.
-    </p>
-  </div>
-
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
-    <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
-    <p class="text-lg leading-relaxed text-muted-foreground">
-      انتظامك في المراجعة الأسبوعية هو سر الاستمرارية وثبات الحفظ على المدى الطويل.
-    </p>
-  </div>
-</div>
-    `
-  },
-  {
-    id: 11,
-    title: "أخطاء شائعة في التلاوة وكيف تتجنبها",
-    excerpt: "تعرف على أشهر الأخطاء في التلاوة وخطوات عملية لتصحيحها بسرعة.",
+    id: 7,
+    title: "أخطاء شائعة في التلاوة: دليل التقييم الذاتي والتصحيح",
+    excerpt: "تعلم كيفية تجنب أخطاء التلاوة الشائعة مثل السرعة الزائدة، إهمال الغنة، وترقيق المفخم. نصائح عملية وحلول فعالة لتحسين أداءك في قراءة القرآن الكريم.",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
     readTime: "7 دقائق",
     author: "أستاذة فاطمة محمد",
@@ -614,50 +641,103 @@ export const articles: ArticleData[] = [
 <div class="prose prose-lg max-w-none">
   <div class="bg-gradient-to-br from-blue-50 to-purple-50 border-r-4 border-primary p-8 rounded-2xl mb-12">
     <p class="text-xl leading-relaxed text-foreground">
-      كثير من الأخطاء في التلاوة تكون بسيطة لكنها تؤثر على الأداء. هنا نلخصها مع حلول عملية لتجنبها.
+      الوصول إلى تلاوة متقنة لا يخلو من عثرات في البداية. كثير من الأخطاء التي يقع فيها المبتدئون تبدو بسيطة، لكن تراكمها يؤثر على جودة الأداء وأحكام التجويد. في هذا المقال، نسلط الضوء على أبرز هذه الأخطاء ونقدم حلولاً عملية لتجاوزها بذكاء.
     </p>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      خطأ السرعة الزائدة
+      1. تحدي السرعة الزائدة (Haste in Recitation)
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      السرعة تُضعف مخارج الحروف. الحل: اقرأ ببطء مع الالتزام بمواضع الوقف.
+      السرعة المفرطة تؤدي غالباً إلى "دمج" الحروف وضياع مخارجها الصحيحة.
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-4">
+      <li>الأثر: فقدان التوازن في المدود وضياع صفات الحروف.</li>
+      <li>الحل العملي: التزم بمرتبة "التحقيق" (القراءة ببطء واطمئنان) مع التركيز التام على مواضع الوقف والابتداء. تذكر أن القراءة المتأنية تساعدك على التدبر أيضاً.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      خطأ إهمال الغنة
+      2. إهمال زمن الغنة
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      الغنة جزء أساسي في بعض الأحكام مثل الإدغام والإخفاء. الحل: تدرب على طول الغنة الصحيح.
+      الغنة صفة لازمة لحرفي النون والميم، وهي ركن أساسي في أحكام مثل الإدغام والإخفاء.
     </p>
-  </div>
-
-  <div class="bg-white border-r-4 border-primary p-6 rounded-xl mb-12 shadow-sm">
-    <p class="text-lg text-foreground font-semibold">
-      استمع لقارئ متقن وقلد الأداء ثم قارن تسجيلك معه.
-    </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-4">
+      <li>الأثر: تصبح التلاوة "جافة" وفاقدة لجمالها الصوتي واللحني.</li>
+      <li>الحل العملي: تدرب على مقدار زمن الغنة (حركتان) من خلال الاستماع لقراء مشهورين بجمال الغنة، وحاول محاكاة طول النفس لديهم.</li>
+    </ul>
   </div>
 
   <div class="mb-12">
     <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
       <span class="w-2 h-8 bg-primary rounded-full"></span>
-      خطأ ترقيق المفخم
+      3. ترقيق الحروف المفخمة
     </h2>
     <p class="text-lg leading-relaxed text-muted-foreground mb-6">
-      بعض الحروف يجب تفخيمها دائماً مثل ص، ض، ط، ظ. الحل: تمرن على مواضعها في كلمات مختلفة.
+      يقع الكثيرون في خطأ ترقيق حروف الاستعلاء (ص، ض، ط، ظ، ق، غ، خ).
     </p>
+    <ul class="list-disc pr-6 text-muted-foreground text-lg leading-relaxed mb-4">
+      <li>الأثر: تغيير جرس الحرف وقد يؤدي أحياناً لتغيير المعنى.</li>
+      <li>الحل العملي: تمرن على رفع أقصى اللسان عند نطق هذه الحروف. جرب نطقها في كلمات مختلفة (مفتوحة، مضمومة، ومكسورة) لتعتاد عضلة اللسان على وضعية التفخيم.</li>
+    </ul>
   </div>
 
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl">
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      خارطة طريق لتصحيح الأداء الذاتي
+    </h2>
+    <ol class="list-decimal pr-6 text-muted-foreground text-lg leading-relaxed mb-12">
+      <li>المحاكاة (Modeling): استمع لقارئ متقن يقرأ نفس الآية التي تتدرب عليها.</li>
+      <li>التسجيل والمقارنة: سجل تلاوتك ثم استمع إليها جنباً إلى جنب مع تسجيل القارئ المتقن.</li>
+      <li>العزل: إذا وجدت خطأ في مخرج حرف معين، اعزل هذا الحرف وتدرب عليه منفرداً قبل إعادته للسياق.</li>
+    </ol>
+  </div>
+
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold text-foreground mb-6 flex items-center gap-3">
+      <span class="w-2 h-8 bg-primary rounded-full"></span>
+      جدول الأخطاء والحلول السريعة
+    </h2>
+    <div class="overflow-x-auto mb-8">
+      <table class="min-w-full bg-white border border-gray-200 rounded-xl shadow-sm">
+        <thead>
+          <tr class="bg-gray-50">
+            <th class="px-6 py-4 text-right font-bold text-foreground">الخطأ الشائع</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">السبب المحتمل</th>
+            <th class="px-6 py-4 text-right font-bold text-foreground">الحل السريع</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">ضياع المدود</td>
+            <td class="px-6 py-4 text-muted-foreground">عدم التنفس بشكل صحيح</td>
+            <td class="px-6 py-4 text-muted-foreground">تقسيم الآيات الطويلة لمقاطع.</td>
+          </tr>
+          <tr class="bg-gray-50">
+            <td class="px-6 py-4 text-muted-foreground font-semibold">قلقلة غير صحيحة</td>
+            <td class="px-6 py-4 text-muted-foreground">شدة الضغط على الحرف</td>
+            <td class="px-6 py-4 text-muted-foreground">تخفيف الضغط مع الحفاظ على مخرج الحرف.</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 text-muted-foreground font-semibold">خلط السين بالصاد</td>
+            <td class="px-6 py-4 text-muted-foreground">وضعية اللسان</td>
+            <td class="px-6 py-4 text-muted-foreground">خفض اللسان للسين ورفعه للصاد.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="bg-gradient-to-br from-green-50 to-emerald-50 border-r-4 border-primary p-8 rounded-2xl">
     <h3 class="text-2xl font-bold text-foreground mb-4">الخلاصة</h3>
     <p class="text-lg leading-relaxed text-muted-foreground">
-      تحديد الخطأ خطوة أولى، ومع التدريب اليومي ستصبح التلاوة أكثر صفاء ودقة.
+      تحديد الخطأ هو أولى خطوات الإتقان. لا تجعل الخوف من الخطأ يمنعك من القراءة؛ فالهدف هو التحسن المستمر. التدريب اليومي والمشافهة هما الضمان الوحيد للوصول إلى تلاوة صافية ودقيقة.
     </p>
   </div>
 </div>
@@ -675,4 +755,3 @@ export const getRelatedArticles = (currentId: number, count = 3): ArticleData[] 
     .sort(() => 0.5 - Math.random())
     .slice(0, count);
 };
-

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { BookOpen, Video, Clock, ArrowLeft, Play } from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import type { ArticleData } from "../data/articles";
+import { articles } from "../data/articles";
 
 export function LibraryPage() {
   const [activeTab, setActiveTab] = useState<"articles" | "videos">("articles");
@@ -10,85 +12,7 @@ export function LibraryPage() {
     document.title = "المكتبة التعليمية - أكاديمية إخلاص";
   }, []);
 
-  const articles = [
-    {
-      id: 1,
-      title: "أهمية تعلم التجويد للمبتدئين",
-      excerpt: "تعرف على الأساسيات التي يجب أن يبدأ بها كل مبتدئ في رحلته لتعلم أحكام التجويد وتطبيقها بشكل صحيح.",
-      image: "https://images.unsplash.com/photo-1609599006353-e629aaabfeae?w=800&h=600&fit=crop",
-      readTime: "5 دقائق"
-    },
-    {
-      id: 2,
-      title: "كيف تحفظ القرآن بطريقة فعالة",
-      excerpt: "استراتيجيات مجربة وأساليب عملية لحفظ القرآن الكريم بإتقان ومراجعته بشكل منتظم.",
-      image: "https://images.unsplash.com/photo-1551006917-3e0021adf687?w=800&h=600&fit=crop",
-      readTime: "7 دقائق"
-    },
-    {
-      id: 3,
-      title: "مخارج الحروف العربية الصحيحة",
-      excerpt: "شرح مفصل لمخارج الحروف العربية وكيفية نطقها بشكل صحيح لتحسين قراءة القرآن الكريم.",
-      image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=600&fit=crop",
-      readTime: "6 دقائق"
-    },
-    {
-      id: 4,
-      title: "فوائد تعلم القراءة العربية للأطفال",
-      excerpt: "اكتشف الفوائد المتعددة لتعليم الأطفال القراءة العربية وأفضل الطرق لجعل التعلم ممتعاً.",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
-      readTime: "5 دقائق"
-    },
-    {
-      id: 5,
-      title: "أحكام النون الساكنة والتنوين",
-      excerpt: "دليل شامل لفهم وتطبيق أحكام النون الساكنة والتنوين الأربعة: الإظهار والإدغام والإقلاب والإخفاء.",
-      image: "https://images.unsplash.com/photo-1585508889524-eb5a0d8c30af?w=800&h=600&fit=crop",
-      readTime: "8 دقائق"
-    },
-    {
-      id: 6,
-      title: "نصائح للحفاظ على استمرارية التعلم",
-      excerpt: "خطوات عملية للبقاء ملتزماً برحلتك التعليمية وتحقيق التقدم المستمر في تعلم القرآن.",
-      image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
-      readTime: "4 دقائق"
-    },
-    {
-      id: 7,
-      title: "كيف تبدأ بتعلم القراءة العربية من الصفر",
-      excerpt: "دليل عملي للمبتدئين لتعلم الحروف والحركات وبناء عادة قراءة يومية بثقة.",
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
-      readTime: "6 دقائق"
-    },
-    {
-      id: 8,
-      title: "أساسيات أحكام المد للمبتدئين",
-      excerpt: "شرح مبسط لأنواع المدود مع أمثلة عملية تساعدك على تحسين التلاوة.",
-      image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
-      readTime: "7 دقائق"
-    },
-    {
-      id: 9,
-      title: "تمارين يومية لتحسين النطق واللفظ",
-      excerpt: "مجموعة تمارين قصيرة تساعدك على تقوية المخارج وضبط اللسان في القراءة.",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
-      readTime: "5 دقائق"
-    },
-    {
-      id: 10,
-      title: "برنامج أسبوعي لمراجعة الحفظ",
-      excerpt: "خطة عملية لمراجعة القرآن على مدار الأسبوع لضمان التثبيت وعدم النسيان.",
-      image: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&h=600&fit=crop",
-      readTime: "6 دقائق"
-    },
-    {
-      id: 11,
-      title: "أخطاء شائعة في التلاوة وكيف تتجنبها",
-      excerpt: "تعرف على أشهر الأخطاء في التلاوة وخطوات عملية لتصحيحها بسرعة.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
-      readTime: "7 دقائق"
-    }
-  ];
+  const libraryArticles: ArticleData[] = articles.slice(0, 7);
 
   const videos = [
     {
@@ -148,7 +72,7 @@ export function LibraryPage() {
           </p>
           <div className="flex justify-center gap-6 max-w-3xl mx-auto mt-12">
             <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-              <div className="text-3xl font-bold text-primary-foreground mb-2">{articles.length}</div>
+              <div className="text-3xl font-bold text-primary-foreground mb-2">{libraryArticles.length}</div>
               <div className="text-sm text-primary-foreground/80">مقالة تعليمية</div>
             </div>
             <div className="bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20">
@@ -223,7 +147,7 @@ export function LibraryPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {articles.map((article) => (
+                {libraryArticles.map((article) => (
                   <Link
                     key={article.id}
                     to={`/library/article/${article.id}`}
