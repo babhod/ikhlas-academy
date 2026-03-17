@@ -116,14 +116,14 @@ export function ArticlePage() {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-foreground mb-2">عن الكاتب</h3>
-                  <h4 className="text-xl font-semibold text-primary mb-3">د. محمد الأحمد</h4>
+                  <h4 className="text-xl font-semibold text-primary mb-3">{article.author}</h4>
                   <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                    دكتور في علوم القرآن والقراءات، حاصل على إجازة في القرآن الكريم برواية حفص عن عاصم. له خبرة تزيد عن 15 عاماً في تعليم التجويد والقراءة العربية للأطفال والكبار. يعمل حالياً كمعلم رئيسي في أكاديمية إخلاص لتعليم القرآن الكريم.
+                    فريق أكاديمية إخلاص المختص في تعليم القرآن الكريم والقراءة العربية. حاصلون على إجازات في القراءات ويتمتعون بخبرة واسعة في تدريس التجويد لجميع المستويات.
                   </p>
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <User size={16} className="text-primary" />
-                      <span>معلم معتمد</span>
+                      <span>فريق متخصص</span>
                     </div>
                   </div>
                 </div>

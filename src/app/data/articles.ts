@@ -19,7 +19,7 @@ export const articles: ArticleData[] = [
     excerpt: "اكتشف أفضل طرق حفظ القرآن الكريم بفعالية. خطوات عملية، جدول مراجعة يومي، ونصائح لاختيار الوقت الذهبي لضمان ثبات الحفظ.",
     image: "https://images.unsplash.com/photo-1551006917-3e0021adf687?w=800&h=600&fit=crop",
     readTime: "7 دقائق",
-    author: "د. محمد الأحمد",
+    author: "أكاديمية إخلاص",
     date: "20 مارس 2026",
     category: "الحفظ والمراجعة",
     fullContent: `
@@ -115,7 +115,7 @@ export const articles: ArticleData[] = [
     excerpt: "تعرف على مخارج الحروف العربية الخمسة الكبرى. دليل عملي لضبط مخارج الحلق واللسان والشفتين لتحسين النطق وتلاوة القرآن الكريم بوضوح وإتقان.",
     image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=800&h=600&fit=crop",
     readTime: "6 دقائق",
-    author: "الشيخ أحمد السيد",
+    author: "أكاديمية إخلاص",
     date: "25 مارس 2026",
     category: "مخارج الحروف",
     fullContent: `
@@ -208,7 +208,7 @@ export const articles: ArticleData[] = [
     excerpt: "اكتشف أهم فوائد تعليم اللغة العربية للأطفال في سن مبكرة. نصائح عملية، أساليب تعليمية مبتكرة، وكيفية تحويل القراءة إلى عادة يومية ممتعة لطفلك.",
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
     readTime: "5 دقائق",
-    author: "أستاذة فاطمة محمد",
+    author: "أكاديمية إخلاص",
     date: "30 مارس 2026",
     category: "تعليم الأطفال",
     fullContent: `
@@ -305,7 +305,7 @@ export const articles: ArticleData[] = [
     excerpt: "الاستمرارية هي سر النجاح في أي رحلة تعليمية. اكتشف نصائح عملية حول ربط العادات، التخطيط المرن، وكيفية الحفاظ على حماسك للتعلم لفترات طويلة.",
     image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop",
     readTime: "4 دقائق",
-    author: "الشيخ أحمد السيد",
+    author: "أكاديمية إخلاص",
     date: "10 أبريل 2026",
     category: "النصائح والإرشاد",
     fullContent: `
@@ -417,7 +417,7 @@ export const articles: ArticleData[] = [
     excerpt: "اكتشف أسهل طريقة لتعلم القراءة العربية من الصفر. خطة أسبوعية لتعلم أشكال الحروف، الحركات الأساسية، وبناء الكلمات بأسلوب عملي يضمن لك نتائج سريعة.",
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=600&fit=crop",
     readTime: "6 دقائق",
-    author: "أستاذة فاطمة محمد",
+    author: "أكاديمية إخلاص",
     date: "12 أبريل 2026",
     category: "القراءة العربية",
     fullContent: `
@@ -509,7 +509,7 @@ export const articles: ArticleData[] = [
     excerpt: "حسن نطقك ومخارج حروفك بتمارين يومية بسيطة لا تتجاوز 10 دقائق. تعلم تمارين الإحماء الصوتي، التمييز بين الحروف المتقاربة، وتقنيات التسجيل الذاتي للاتقان.",
     image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&h=600&fit=crop",
     readTime: "5 دقائق",
-    author: "الشيخ أحمد السيد",
+    author: "أكاديمية إخلاص",
     date: "16 أبريل 2026",
     category: "النطق والتلاوة",
     fullContent: `
@@ -634,7 +634,7 @@ export const articles: ArticleData[] = [
     excerpt: "تعلم كيفية تجنب أخطاء التلاوة الشائعة مثل السرعة الزائدة، إهمال الغنة، وترقيق المفخم. نصائح عملية وحلول فعالة لتحسين أداءك في قراءة القرآن الكريم.",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
     readTime: "7 دقائق",
-    author: "أستاذة فاطمة محمد",
+    author: "أكاديمية إخلاص",
     date: "20 أبريل 2026",
     category: "تحسين التلاوة",
     fullContent: `
