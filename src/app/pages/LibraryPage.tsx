@@ -19,42 +19,42 @@ export function LibraryPage() {
       id: 1,
       title: "مقدمة في علم التجويد",
       description: "شرح مبسط لعلم التجويد وأهميته في تلاوة القرآن الكريم بطريقة صحيحة.",
-      thumbnail: "https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?w=800&h=600&fit=crop",
+      thumbnail: "https://res.cloudinary.com/dhueginul/image/upload/v1773814737/v8_rth12m.jpg",
       duration: "15:30"
     },
     {
       id: 2,
       title: "كيفية نطق الحروف الهجائية",
       description: "درس عملي لتعليم النطق الصحيح للحروف العربية من مخارجها.",
-      thumbnail: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop",
+      thumbnail: "https://res.cloudinary.com/dhueginul/image/upload/v1773814741/v7_sdazou.jpg",
       duration: "12:45"
     },
     {
       id: 3,
       title: "أحكام المد في التلاوة",
       description: "شرح تفصيلي لأنواع المدود وأحكامها مع أمثلة تطبيقية من القرآن الكريم.",
-      thumbnail: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=600&fit=crop",
+      thumbnail: "https://res.cloudinary.com/dhueginul/image/upload/v1773815174/d1eff38d-cf89-4d8a-b365-4c0be77c32e3.png",
       duration: "18:20"
     },
     {
       id: 4,
       title: "نصائح لتحفيظ القرآن للأطفال",
       description: "أساليب مبتكرة وممتعة لتحفيظ الأطفال القرآن الكريم بطريقة تفاعلية.",
-      thumbnail: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+      thumbnail: "https://res.cloudinary.com/dhueginul/image/upload/v1773814597/v1_nqalhw.jpg",
       duration: "10:15"
     },
     {
       id: 5,
       title: "تطبيق عملي لأحكام الإدغام",
       description: "أمثلة تطبيقية من القرآن الكريم لتوضيح أحكام الإدغام بأنواعه.",
-      thumbnail: "https://images.unsplash.com/photo-1495592822108-9e6261896da8?w=800&h=600&fit=crop",
+      thumbnail: "https://res.cloudinary.com/dhueginul/image/upload/v1773814737/v6_ihgqmk.jpg",
       duration: "14:50"
     },
     {
       id: 6,
       title: "كيف تضبط تلاوتك في شهر",
       description: "برنامج مكثف لمدة شهر لتحسين تلاوتك وإتقان أحكام التجويد الأساسية.",
-      thumbnail: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop",
+      thumbnail: "https://res.cloudinary.com/dhueginul/image/upload/v1773814604/v3_ulwzfg.jpg",
       duration: "20:00"
     }
   ];
