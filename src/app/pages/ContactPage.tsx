@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, MessageCircle, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, MessageCircle, Clock, Instagram, Globe } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function ContactPage() {
@@ -90,16 +90,21 @@ ${formData.message}
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-6 bg-[color-mix(in_srgb,#2750A9_6%,white)] border border-[color-mix(in_srgb,#2750A9_25%,white)] rounded-xl">
-                  <div className="bg-primary p-3 rounded-lg">
-                    <Phone className="text-white" size={24} />
+                <a
+                  href="https://www.instagram.com/ihlasacademyofficial/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-6 bg-gradient-to-r from-pink-50 to-purple-50 border border-pink-200/50 rounded-xl hover:shadow-lg transition-all hover:-translate-y-1"
+                >
+                  <div className="bg-gradient-to-br from-pink-500 to-purple-600 p-3 rounded-lg shadow-lg">
+                    <Instagram className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">الهاتف</h3>
-                    <p className="text-muted-foreground" dir="ltr">+905 464 077 736</p>
-                    <p className="text-sm text-muted-foreground mt-1">السبت - الخميس: 9 صباحاً - 9 مساءً</p>
+                    <h3 className="font-bold text-foreground mb-1">إنستغرام</h3>
+                    <p className="text-muted-foreground">@ihlasacademyofficial</p>
+                    <p className="text-sm text-pink-600 mt-1 font-medium">تابعنا للمزيد من التحديثات</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-4 p-6 bg-amber-50 border border-amber-200 rounded-xl">
                   <div className="bg-accent p-3 rounded-lg">
@@ -112,13 +117,13 @@ ${formData.message}
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-6 bg-gray-50 border border-gray-200 rounded-xl">
-                  <div className="bg-secondary p-3 rounded-lg">
-                    <MapPin className="text-white" size={24} />
+                <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-emerald-50 to-blue-50 border border-emerald-200/50 rounded-xl">
+                  <div className="bg-gradient-to-br from-emerald-500 to-blue-600 p-3 rounded-lg shadow-lg">
+                    <Globe className="text-white" size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">المنطقة</h3>
-                    <p className="text-muted-foreground">نخدم طلاباً من سوريا، لبنان، الأردن، وفلسطين</p>
+                    <h3 className="font-bold text-foreground mb-1">عالمياً</h3>
+                    <p className="text-muted-foreground">منصة تعليمية عبر الإنترنت تخدم العالم بأكمله 🌍</p>
                   </div>
                 </div>
               </div>
